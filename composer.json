@@ -21,7 +21,7 @@
         "drupal/components": "2.x-dev",
         "drupal/config_filter": "2.x-dev",
         "drupal/config_ignore": "3.x-dev",
-        "drupal/config_split": "^1.4",
+        "drupal/config_split": "1.x-dev",
         "drupal/console": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
@@ -187,6 +187,9 @@
             "drupal/components": {
                 "Drupal 9 Deprecated Code Report for Components module": "https://www.drupal.org/files/issues/2020-03-13/components-twig-3112929-5.patch"
             },
+            "drupal/config_split": {
+                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2019-12-12/3042682-15-deprecated-code-report.patch"
+            },
             "drupal/elasticsearch_connector": {
                 "Filters breaking score if no query string": "https://www.drupal.org/files/issues/2019-10-15/3087971-filters-breaking-score.patch",
                 "Search API + Elastic connector + VBO error performing action":"https://www.drupal.org/files/issues/2019-09-04/3050133-vbo-fix.patch",
@@ -257,6 +260,7 @@
             "Components 2.x-dev version is D9 ready",
             "Config Filter 2.x-dev version,",
             "Config Ignore 3.x-dev version,",
+            "Config Split 1.x-dev version",
             "ElasticSearch Connector Drupal 9 Readiness -- no patch available, no work on version 6, which is the version we use",
             "Inline entity Form Drupal 9 Readiness -- no assessment has been completed, no patch available",
             "Libraries API Drupal 9 Readiness -- https://www.drupal.org/project/libraries/issues/3110305, support for third party libraries is being added to Drupal 8.9, this module will no lnger be needed.  https://www.drupal.org/project/libraries/issues/3110305",
@@ -277,6 +281,7 @@
             "Components 2.x-dev version, under active development",
             "Config Filter 2.x-dev version, under active development",
             "Config Ignore 3.x-dev version, under active development",
+            "Config Split 1.x-dev version, under active development",
             "ElasticSearch Connector -- dev version, no active development since October 2019",
             "Inline Entity Form -- rc3 version, under active development",
             "Libraries API -- dev version, no active development since June 2019",
