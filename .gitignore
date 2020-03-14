@@ -1,3 +1,8 @@
 .DS_Store
 .ash_history
-
+.editorconfig
+.gitattributes
+bin/
+vendor/
+docroot/
+composer.lock
