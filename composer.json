@@ -18,7 +18,7 @@
         "drupal/block_field": "1.x-dev",
         "drupal/captcha": "^1.0",
         "drupal/cloudflare": "1.x-dev",
-        "drupal/components": "^1.0",
+        "drupal/components": "2.x-dev",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
