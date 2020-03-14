@@ -55,8 +55,8 @@ before_script:
   - docker-compose ps
   - sudo chmod a+w docroot/sites/default/files
   - sleep 15
-#  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush site:install --db-url=mysql://drupal:drupal@db/drupal --account-name='admin' --account-pass='admin' --account-mail='ifdrupaladmin@ifsight.net' --site-name='Tabula Rasa 8' --site-mail='ifdrupaladmin@ifsight.net' -y"
-#  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
+  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush site:install --db-url=mysql://drupal:drupal@db/drupal --account-name='admin' --account-pass='admin' --account-mail='ifdrupaladmin@ifsight.net' --site-name='Tabula Rasa 8' --site-mail='ifdrupaladmin@ifsight.net' -y"
+  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
 
 script:
 #  - ./d9-readiness-test-cobb.sh
