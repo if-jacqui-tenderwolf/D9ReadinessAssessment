@@ -48,9 +48,7 @@ before_install:
 before_script:
   # initial composer build process
   - composer install
-  - cd ./docroot/sites/default
-  - curl -O https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php
-  - cd ../../..
+  - curl https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php -o ./docroot/sites/default/default.settings.php
   - docker-compose up -d --build
   - docker-compose ps
   - sudo chmod a+w docroot/sites/default/files

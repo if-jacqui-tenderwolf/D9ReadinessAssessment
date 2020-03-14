@@ -11,8 +11,9 @@
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.4",
-        "drupal/advagg": "^3.0",
+        "drupal/advagg": "4.x-dev",
         "drupal/allowed_formats": "1.x-dev",
+        "drupal/auditfiles": "^2.2",
         "drupal/better_exposed_filters": "4.x-dev",
         "drupal/block_field": "1.x-dev",
         "drupal/captcha": "^1.0",
@@ -241,6 +242,7 @@
             }
         },
         "_drupal_9_readiness_assessment": [
+            "Address -- 1.x-dev,",
             "Admin Toolbar -- 2.0 stable version is D9 ready",
             "Advanced CSS/JS Aggregation -- dev version 4.x is supposed to be D9 ready, but fails scan",
             "Allowed Formats -- 1.x-dev version is D9 ready",
@@ -259,6 +261,7 @@
             "Ultimate Cron Drupal 9 Readiness -- open issue in issue queue, no work currently, https://www.drupal.org/project/ultimate_cron/issues/3110312"
         ],
         "_modules_not_stable": [
+            "Address -- dev version, under active development",
             "Advanced CSS / JS Aggregation -- dev version, under active development",
             "Better Exposed Filters -- dev version, under active development",
             "Block field -- dev version, patched for D9 readiness, no active development since April 2019",

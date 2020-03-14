@@ -2,6 +2,7 @@
 .ash_history
 .editorconfig
 .gitattributes
+.drush/
 bin/
 vendor/
 docroot/
