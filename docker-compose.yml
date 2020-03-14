@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   nginx:
-    hostname: tabrasa8.ifdev
+    hostname: drupal.local
     image: fulcrum/nginx:1.16
     volumes:
       - ./datamounts/nginx/etc/nginx:/etc/nginx
