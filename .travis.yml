@@ -31,22 +31,26 @@ before_install:
   - export PATH=$PATH:$HOME/.local/bin
   - sudo apt-get -qq update
   - sudo apt-get install -y pv
-  - curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-  - unzip awscli-bundle.zip
-  - ./awscli-bundle/install -b ~/bin/aws
-  - rm -Rf awscli-bundle.zip
-  - rm -Rf awscli-bundle
+  # Removing AWS CLI install for now, may need later
+  #- curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  #- unzip awscli-bundle.zip
+  #- ./awscli-bundle/install -b ~/bin/aws
+  #- rm -Rf awscli-bundle.zip
+  #- rm -Rf awscli-bundle
+  # Adding bin path to global path to support post-composer build process and finding binaries for testing purposes
   - export PATH=~/bin:$PATH
   - mkdir -p ~/shared
-#  - ./tabrasa8-before-install.sh # Installs Docker Stack
   - docker-compose pull
 
 before_script:
-#  - ./tabrasa8-build.sh # Checks out TabRasa8 on "new-composer-build" branch
-  #- composer install # Runs in case patches failed during initial composer build
+  # initial composer build process
+  - composer install
+  - cd ./docroot/sites/default
+  - curl -O https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php 
+  - cd ../../..
   - docker-compose up -d --build
   - docker-compose ps
-#  - sudo chmod a+w docroot/sites/default/files
+  - sudo chmod a+w docroot/sites/default/files
   - sleep 15
 #  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush site:install --db-url=mysql://drupal:drupal@db/drupal --account-name='admin' --account-pass='admin' --account-mail='ifdrupaladmin@ifsight.net' --site-name='Tabula Rasa 8' --site-mail='ifdrupaladmin@ifsight.net' -y"
 #  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
