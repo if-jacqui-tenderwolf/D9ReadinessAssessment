@@ -8,6 +8,7 @@
         "bower-asset/plupload": "^3.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
+        "drupal/address": "^1.8",
         "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.4",
         "drupal/advagg": "^3.0",
@@ -123,36 +124,6 @@
         ]
     },
     "extra": {
-        "_drupal_9_readiness_assessment": [
-            "Better Exposed filters Drupal 9 Readiness outstanding issues: https://www.drupal.org/project/better_exposed_filters/issues/3114031",
-            "Block field Drupal 9 readiness outstanding issues:  https://www.drupal.org/project/block_field/issues/3042702",
-            "Cloudflare Drupal 9 Readiness outstanding issues (patch only partially addresses): https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
-            "ElasticSearch Connector Drupal 9 Readiness -- no patch available, no work on version 6, which is the version we use",
-            "Inline entity Form Drupal 9 Readiness -- no assessment has been completed, no patch available",
-            "Libraries API Drupal 9 Readiness -- https://www.drupal.org/project/libraries/issues/3110305, support for third party libraries is being added to Drupal 8.9, this module will no lnger be needed.  https://www.drupal.org/project/libraries/issues/3110305",
-            "Linkit Drupal 9 Readiness -- https://www.drupal.org/files/issues/2020-01-28/linkit-d9-3042631-11.patch, patch applied",
-            "Masquerade Drupal 9 Readiness -- running dev version, already D9 ready, https://www.drupal.org/project/masquerade/issues/3042713",
-            "Plupload Drupal 9 Readiness -- running beta version, patch applied for D9 readiness, https://www.drupal.org/project/plupload/issues/3093844",
-            "Purge Drupal 9 Readiness -- running dev version, partially patched for D9 readiness, remaining issues are in issue queue",
-            "URLs queuer (purge_queuer_url) Drupal 9 Readiness, no active issue in issue queue to address",
-            "SMTP Drupal 9 Readiness -- running beta7 version, applied patch ",
-            "Ultimate Cron Drupal 9 Readiness -- open issue in issue queue, no work currently, https://www.drupal.org/project/ultimate_cron/issues/3110312"
-        ],
-        "_modules_not_stable": [
-            "Better Exposed Filters -- dev version, under active development",
-            "Block field -- dev version, patched for D9 readiness, no active development since April 2019",
-            "Cloudflare -- dev version, patched for D9 readiness (partial), no active development since March 2019",
-            "ElasticSearch Connector -- dev version, no active development since October 2019",
-            "Inline Entity Form -- rc3 version, under active development",
-            "Libraries API -- dev version, no active development since June 2019",
-            "Linkit module -- dev version, patched for D9 readiness, under active development",
-            "Masquerade -- dev version, is D8 ready, under active development",
-            "Plupload -- beta2 version, no active development since December 2018",
-            "Purge -- dev version, under active development",
-            "URLs queuer (purge_queuer_url) -- rc1 version, no active development since September 2017",
-            "SMTP -- beta version, under active development",
-            "Ultimate Cron -- dev version, no active development since February 2019"
-        ],
         "drupal-scaffold": {
             "file-mapping": {
                 "[web-root]/robots.txt": false,
@@ -268,6 +239,40 @@
                 "Some hovered buttons text invisible": "https://www.drupal.org/files/issues/2019-10-15/invisible_button_text-3087937-2.patch",
                 "Error states of checkboxes": "https://www.drupal.org/files/issues/2020-01-06/3032036-5.patch"
             }
-        }
+        },
+        "_drupal_9_readiness_assessment": [
+            "Admin Toolbar -- 2.0 stable version is D9 ready",
+            "Advanced CSS/JS Aggregation -- dev version 4.x is supposed to be D9 ready, but fails scan",
+            "Allowed Formats -- 1.x-dev version is D9 ready",
+            "Better Exposed filters Drupal 9 Readiness outstanding issues: https://www.drupal.org/project/better_exposed_filters/issues/3114031",
+            "Block field Drupal 9 readiness outstanding issues:  https://www.drupal.org/project/block_field/issues/3042702",
+            "Cloudflare Drupal 9 Readiness outstanding issues (patch only partially addresses): https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
+            "ElasticSearch Connector Drupal 9 Readiness -- no patch available, no work on version 6, which is the version we use",
+            "Inline entity Form Drupal 9 Readiness -- no assessment has been completed, no patch available",
+            "Libraries API Drupal 9 Readiness -- https://www.drupal.org/project/libraries/issues/3110305, support for third party libraries is being added to Drupal 8.9, this module will no lnger be needed.  https://www.drupal.org/project/libraries/issues/3110305",
+            "Linkit Drupal 9 Readiness -- https://www.drupal.org/files/issues/2020-01-28/linkit-d9-3042631-11.patch, patch applied",
+            "Masquerade Drupal 9 Readiness -- running dev version, already D9 ready, https://www.drupal.org/project/masquerade/issues/3042713",
+            "Plupload Drupal 9 Readiness -- running beta version, patch applied for D9 readiness, https://www.drupal.org/project/plupload/issues/3093844",
+            "Purge Drupal 9 Readiness -- running dev version, partially patched for D9 readiness, remaining issues are in issue queue",
+            "URLs queuer (purge_queuer_url) Drupal 9 Readiness, no active issue in issue queue to address",
+            "SMTP Drupal 9 Readiness -- running beta7 version, applied patch ",
+            "Ultimate Cron Drupal 9 Readiness -- open issue in issue queue, no work currently, https://www.drupal.org/project/ultimate_cron/issues/3110312"
+        ],
+        "_modules_not_stable": [
+            "Advanced CSS / JS Aggregation -- dev version, under active development",
+            "Better Exposed Filters -- dev version, under active development",
+            "Block field -- dev version, patched for D9 readiness, no active development since April 2019",
+            "Cloudflare -- dev version, patched for D9 readiness (partial), no active development since March 2019",
+            "ElasticSearch Connector -- dev version, no active development since October 2019",
+            "Inline Entity Form -- rc3 version, under active development",
+            "Libraries API -- dev version, no active development since June 2019",
+            "Linkit module -- dev version, patched for D9 readiness, under active development",
+            "Masquerade -- dev version, is D8 ready, under active development",
+            "Plupload -- beta2 version, no active development since December 2018",
+            "Purge -- dev version, under active development",
+            "URLs queuer (purge_queuer_url) -- rc1 version, no active development since September 2017",
+            "SMTP -- beta version, under active development",
+            "Ultimate Cron -- dev version, no active development since February 2019"
+        ]
     }
 }
