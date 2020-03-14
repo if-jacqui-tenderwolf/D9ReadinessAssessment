@@ -263,7 +263,7 @@
                 "Add command to run ultimate cron using drupal console": "https://www.drupal.org/files/issues/2019-01-03/ultimate_cron-drupal-console-cron-command-3023613-2-D8.patch"
             },
             "drupal/adminimal_theme": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-21/adminimal_theme_drupal9.patch",
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-19/deprecated-3075752-2.patch",
                 "Table is cropped in vertical tabs": "https://www.drupal.org/files/issues/2019-09-11/table_is_cropped_in_vertical_tabs-3080442-3.patch",
                 "Some hovered buttons text invisible": "https://www.drupal.org/files/issues/2019-10-15/invisible_button_text-3087937-2.patch",
                 "Error states of checkboxes": "https://www.drupal.org/files/issues/2020-01-06/3032036-5.patch"

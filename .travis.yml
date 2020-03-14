@@ -19,7 +19,10 @@ env:
   - COMPOSER_MEMORY_LIMIT=-1
 
 git:
+  # Do a full clone
   depth: false
+  # Avoid logging git clone messages
+  quiet: true
 
 notifications:
   email:
