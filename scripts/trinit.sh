@@ -3,7 +3,7 @@
 # Initialization script for TabRasa8 project
 
 # Copy the settings.php file to docroot/sites/default/settings.php
-if [ -f ./docroot/sites/default/settings.php]; then
+if [ -f ./docroot/sites/default/settings.php ]; then
 	chmod 0777 ./docroot/sites/default/settings.php
 fi
 if [ ! -f "docroot/sites/default/settings.php" ]; then

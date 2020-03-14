@@ -62,7 +62,7 @@ before_script:
   - cp ./drupal/settings.php ./docroot/sites/default/settings.php
   - chmod 0644 ./docroot/sites/default/settings.php
   - chmod 0777 ./docroot/sites/default/settings.local.php
-  - cp ../drupal/settings.local.php ./docroot/sites/default/settings.local.php
+  - cp ./drupal/settings.local.php ./docroot/sites/default/settings.local.php
   # Run a cache reset on the drupal install
   - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
 
