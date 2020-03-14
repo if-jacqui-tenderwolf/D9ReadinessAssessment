@@ -119,7 +119,7 @@
     ],
     "scripts": {
         "post-update-cmd": [
-            "scripts/trinit.sh"
+            "scripts/init.sh"
         ]
     },
     "extra": {
