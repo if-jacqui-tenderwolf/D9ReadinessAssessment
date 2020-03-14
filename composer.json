@@ -11,7 +11,7 @@
         "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.4",
         "drupal/advagg": "^3.0",
-        "drupal/allowed_formats": "^1.1",
+        "drupal/allowed_formats": "1.x-dev",
         "drupal/better_exposed_filters": "4.x-dev",
         "drupal/block_field": "1.x-dev",
         "drupal/captcha": "^1.0",
