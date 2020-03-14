@@ -19,6 +19,8 @@
         "drupal/captcha": "^1.0",
         "drupal/cloudflare": "1.x-dev",
         "drupal/components": "2.x-dev",
+        "drupal/config_filter": "2.x-dev",
+        "drupal/config_ignore": "3.x-dev",
         "drupal/config_split": "^1.4",
         "drupal/console": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
@@ -182,6 +184,9 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
                 "Cloudflarepurge: Allow for altering targets before purging": "https://www.drupal.org/files/issues/2019-04-01/3044887-n2.patch"
             },
+            "drupal/components": {
+                "Drupal 9 Deprecated Code Report for Components module": "https://www.drupal.org/files/issues/2020-03-13/components-twig-3112929-5.patch"
+            },
             "drupal/elasticsearch_connector": {
                 "Filters breaking score if no query string": "https://www.drupal.org/files/issues/2019-10-15/3087971-filters-breaking-score.patch",
                 "Search API + Elastic connector + VBO error performing action":"https://www.drupal.org/files/issues/2019-09-04/3050133-vbo-fix.patch",
@@ -249,6 +254,9 @@
             "Better Exposed filters Drupal 9 Readiness outstanding issues: https://www.drupal.org/project/better_exposed_filters/issues/3114031",
             "Block field Drupal 9 readiness outstanding issues:  https://www.drupal.org/project/block_field/issues/3042702",
             "Cloudflare Drupal 9 Readiness outstanding issues (patch only partially addresses): https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
+            "Components 2.x-dev version is D9 ready",
+            "Config Filter 2.x-dev version,",
+            "Config Ignore 3.x-dev version,",
             "ElasticSearch Connector Drupal 9 Readiness -- no patch available, no work on version 6, which is the version we use",
             "Inline entity Form Drupal 9 Readiness -- no assessment has been completed, no patch available",
             "Libraries API Drupal 9 Readiness -- https://www.drupal.org/project/libraries/issues/3110305, support for third party libraries is being added to Drupal 8.9, this module will no lnger be needed.  https://www.drupal.org/project/libraries/issues/3110305",
@@ -266,6 +274,9 @@
             "Better Exposed Filters -- dev version, under active development",
             "Block field -- dev version, patched for D9 readiness, no active development since April 2019",
             "Cloudflare -- dev version, patched for D9 readiness (partial), no active development since March 2019",
+            "Components 2.x-dev version, under active development",
+            "Config Filter 2.x-dev version, under active development",
+            "Config Ignore 3.x-dev version, under active development",
             "ElasticSearch Connector -- dev version, no active development since October 2019",
             "Inline Entity Form -- rc3 version, under active development",
             "Libraries API -- dev version, no active development since June 2019",
