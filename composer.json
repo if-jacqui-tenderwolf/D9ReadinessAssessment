@@ -5,6 +5,7 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "require": {
+        "bower-asset/fontawesome": "^5.12",
         "bower-asset/plupload": "^3.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
@@ -40,7 +41,9 @@
         "drupal/extlink": "1.x-dev",
         "drupal/field_group": "^3.0",
         "drupal/file_entity": "2.x-dev",
+        "drupal/fontawesome": "2.x-dev",
         "drupal/fulcrum_whitelist": "^1.1",
+        "drupal/geocoder": "3.x-dev",
         "drupal/geolocation": "3.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/inline_entity_form": "1.x-dev",
