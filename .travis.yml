@@ -9,11 +9,11 @@ php:
 
 jobs:
   include:
-    - name: TabRasa8 Test Run 1
+    - name: TabRasa8 Test Run 0
       script:
         - echo "Test Run 1 - Address, Admin Toolbar, AdvAgg, Allowed Formats, Audit Files, Better Exposed Filters, Block Field, Captcha, Cloudflare, Components!, Config Filter, Config Ignore, Config Split, CTools, Date Popup, Devel, Diff, Eash Breadcrumb, Elasticsearch Connector, Embed"
         - ./scripts/test1.sh
-    - name: TabRasa8 Test Run 2
+    - name: TabRasa8 Test Run 1
       script:
         - echo "Test Run 2 - Entity, Entity Browser, Entity Embed, Entity Reference Revisions, Environment Indicator, External Links, Field Group, File Entity, FontAwesome, Fulcrum Whitelist (skipped), Geocoder, Geolocation, Google Analytics, IF Helper, Inline Entity Form, Libraries API, LinkIt, MailSystem, Masquerade, Menu Block"
         - ./scripts/test2.sh
@@ -25,7 +25,7 @@ jobs:
       script:
         - echo "Test Run 4 - IF Varnish Purge Tags, Views Reference, Webform, Youtube"
         - ./scripts/test4.sh
-      
+
 services:
   - docker
 
