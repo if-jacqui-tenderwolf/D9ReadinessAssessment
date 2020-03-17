@@ -8,9 +8,17 @@ language: php
 php:
   - '7.3'
 
-env:
-  SUITE=test1.sh
-  SUITE=test-notready1.sh
+jobs:
+  include:
+    - name: All Pass 1
+      script:
+        - echo "Running All Pass 1"
+        - ./scripts/test1.sh
+    - name: Not Ready 1
+      script: 
+        - echo "Running Not Ready 1"
+        - ./scripts/notready1.sh
+      
 services:
   - docker
 
@@ -66,7 +74,3 @@ before_script:
   - cp ./drupal/settings.travis.php ./docroot/sites/default/settings.local.php
   # Run a cache reset on the drupal install
   - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
-
-script:
-  - ./scripts/$SUITE
-
