@@ -4,20 +4,27 @@ os:
 dist:  bionic
 
 language: php
-
 php:
   - '7.3'
 
 jobs:
   include:
-    - name: All Pass 1
+    - name: TabRasa8 Test Run 1
       script:
-        - echo "Running All Pass 1"
+        - echo "Test Run 1 - Address, Admin Toolbar, AdvAgg, Allowed Formats, Audit Files, Better Exposed Filters, Block Field, Captcha, Cloudflare, Components!, Config Filter, Config Ignore, Config Split, CTools, Date Popup, Devel, Diff, Eash Breadcrumb, Elasticsearch Connector, Embed"
         - ./scripts/test1.sh
-    - name: Not Ready 1
-      script: 
-        - echo "Running Not Ready 1"
-        - ./scripts/notready1.sh
+    - name: TabRasa8 Test Run 2
+      script:
+        - echo "Test Run 2 - Entity, Entity Browser, Entity Embed, Entity Reference Revisions, Environment Indicator, External Links, Field Group, File Entity, FontAwesome, Fulcrum Whitelist (skipped), Geocoder, Geolocation, Google Analytics, IF Helper, Inline Entity Form, Libraries API, LinkIt, MailSystem, Masquerade, Menu Block"
+        - ./scripts/test2.sh
+    - name: TabRasa8 Test Run 3
+      script:
+        - echo "Test Run 3 - Metatag, Paragraphs, PathAuto, Plupload, Purge, Purge Queuer URL, RECaptcha, Redirect, Redis, Scheduler, Search API, Search API Autocomplete, Simple Sitemap, SMTP, Social Media Links, Token, Twig Tweak, Typed Data, Ultimate Cron, Varnish Purge"
+        - ./scripts/test3.sh
+    - name: TabRasa8 Test Run 4
+      script:
+        - echo "Test Run 4 - IF Varnish Purge Tags, Views Reference, Webform, Youtube"
+        - ./scripts/test4.sh
       
 services:
   - docker
@@ -38,6 +45,7 @@ git:
 notifications:
   email:
     - lisa@ifsight.com
+    - jacqui@ifsight.com
   on_success: change
   on_failure: always
 
