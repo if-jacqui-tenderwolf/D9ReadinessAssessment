@@ -8,6 +8,9 @@ language: php
 php:
   - '7.3'
 
+env:
+  SUITE=test1.sh
+  SUITE=test-notready1.sh
 services:
   - docker
 
@@ -65,5 +68,5 @@ before_script:
   - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
 
 script:
-  - ./scripts/test.sh
+  - ./scripts/$SUITE
 
