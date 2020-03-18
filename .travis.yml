@@ -25,6 +25,10 @@ jobs:
       script:
         - echo "Test Run 4 - IF Varnish Purge Tags, Views Reference, Webform, Youtube"
         - ./scripts/test4.sh
+    - name: HCPL Test Run 5
+      script:
+        - echo "Test Run 5 - "Add to Calendar, Context, CSV Serialization, External Authentication, Facets, Flag, Full Calendar View, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Migrate Source CSV, Migrate Tools, Office Hours, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Views Autocomplete Filters, Views Data Export"
+        - ./scripts/test5.sh
 
 services:
   - docker

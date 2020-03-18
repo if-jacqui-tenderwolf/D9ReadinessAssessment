@@ -3,7 +3,9 @@
 .editorconfig
 .gitattributes
 .drush/
+.mysql_history
 bin/
 vendor/
 docroot/
+config/
 composer.lock
