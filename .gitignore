@@ -4,6 +4,8 @@
 .gitattributes
 .drush/
 .mysql_history
+.composer/
+
 bin/
 vendor/
 docroot/
