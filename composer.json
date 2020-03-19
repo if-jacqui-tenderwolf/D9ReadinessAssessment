@@ -34,20 +34,25 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/courier": "1.x-dev",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/date_popup": "1.x-dev",
+        "drupal/date_recur": "2.x-dev",
         "drupal/diff": "^1.0",
         "drupal/ds": "3.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/easy_install": "10.x-dev",
         "drupal/editor_advanced_link": "^1.6",
+        "drupal/editor_file": "1.x-dev",
         "drupal/elasticsearch_connector": "6.x-dev",
         "drupal/embed": "1.x-dev",
         "drupal/entity": "^1.0",
         "drupal/entity_browser": "2.x-dev",
+        "drupal/entity_clone": "1.x-dev",
         "drupal/entity_embed": "1.x-dev",
         "drupal/entity_reference_revisions": "1.x-dev",
+        "drupal/entity_reference_views_select": "1.x-dev",
         "drupal/environment_indicator": "3.x-dev",
         "drupal/externalauth": "1.x.dev",
         "drupal/extlink": "1.x-dev",
@@ -63,8 +68,11 @@
         "drupal/geocoder": "3.x-dev",
         "drupal/geolocation": "3.x-dev",
         "drupal/google_analytics": "2.x-dev",
+        "drupal/group": "1.x-dev",
+        "drupal/gtranslate": "^1.13",
         "drupal/html_formatter": "1.x-dev",
         "drupal/inline_entity_form": "1.x-dev",
+        "drupal/insert": "2.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/linkit": "5.x-dev",
         "drupal/mailsystem": "4.x-dev",
@@ -85,6 +93,7 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/pdf": "1.x-dev",
         "drupal/pdf_reader": "1.x-dev",
+        "drupal/permissions_by_term": "^2.18",
         "drupal/plupload": "1.x-dev",
         "drupal/purge": "3.x-dev",
         "drupal/purge_queuer_url": "1.x-dev",
@@ -93,6 +102,8 @@
         "drupal/redirect": "1.x-dev",
         "drupal/redis": "1.x-dev",
         "drupal/robotstxt": "1.x-dev",
+        "drupal/rng_contact": "^1.0@beta",
+        "drupal/rng_quick": "^1.1",
         "drupal/rrssb": "2.x-dev",
         "drupal/rules": "3.x-dev",
         "drupal/scheduler": "1.x-dev",
@@ -105,13 +116,18 @@
         "drupal/single_datetime": "1.x-dev",
         "drupal/smtp": "^1.0-beta7",
         "drupal/social_media_links": "^2.6",
+        "drupal/tac_lite": "1.x-dev",
+        "drupal/text_resize": "1.x-dev",
         "drupal/token": "1.x-dev",
         "drupal/twig_tweak": "^2.4",
         "drupal/typed_data": "1.x-dev",
         "drupal/ultimate_cron": "2.x-dev",
+        "drupal/unlimited_number": "^1.0@beta",
         "drupal/varnish_purge": "^1.12",
+        "drupal/veoa": "^1.0",
         "drupal/video_embed_field": "2.x-dev",
         "drupal/viewerjs": "1.x-dev",
+        "drupal/views_advanced_routing": "1.0",
         "drupal/views_autocomplete_filters": "1.x-dev",
         "drupal/views_data_export": "^1.0@beta",
         "drupal/viewsreference": "^2.0-alpha6",
@@ -277,8 +293,17 @@
                 "Search API + Elastic connector + VBO error performing action":"https://www.drupal.org/files/issues/2019-09-04/3050133-vbo-fix.patch",
                 "Support different types of queries \"match\" and \"terms\"": "https://www.drupal.org/files/issues/2019-08-05/elasticsearch_connector-3072719-different-query-types-2.patch"
             },
+            "drupal/editor_file": {
+                "Drupal 9 Readiness": "https://www.drupal.org/files/issues/2020-01-30/3110068-2.patch"
+            },
+            "drupal/entity_clone": {
+                "keep this module code up to date and preparing for Drupal 9": "https://www.drupal.org/files/issues/2019-05-14/entity_clone-3032476-4.patch"
+            },
             "drupal/google_analytics": {
                 "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-01-03/3072207-26.patch"
+            },
+            "drupal/group": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-11/updated-3042771-8.patch"
             },
             "drupal/inline_entity_form": {
                 "Support adding new entities when translating": "https://www.drupal.org/files/issues/2020-02-19/2822764-53.patch"
@@ -333,6 +358,12 @@
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-02-20/drupal-9-deprecated-code-report-3042630-24.patch",
                 "Drupal 9 Compatibility - fix key in .info.yml": "https://www.drupal.org/files/issues/2020-01-27/3109130-3.patch",
                 "SMTPMailSystem: use EmailValidatorInterface": "https://www.drupal.org/files/issues/2020-02-19/3114689-emailvalidatorinterface.patch"
+            },
+            "drupal/tac_lite": {
+                "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-04/deprecated-3092130-2.patch"
+            },
+            "drupal/text_resize": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-09/text_resize-3073768-1.patch"
             },
             "drupal/ultimate_cron": {
                 "Drupal\\Component\\Plugin\\Exception\\PluginNotFoundException: The \"feeds_feed_refresh__test_node\"":"https://www.drupal.org/files/issues/2018-09-20/ultimate_cron-3001044-2.patch",
