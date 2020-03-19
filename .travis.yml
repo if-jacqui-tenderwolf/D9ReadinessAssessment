@@ -33,6 +33,10 @@ jobs:
       script:
         - echo "Test Run 6 - Ajax View Demo, Courier, Date Recur, Dynamic Entity Reference, Editor File, Entity Clone, Entity Reference View Select, Group, Google Translate, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, TAC Lite, Unlimited Number, Views Entity Operations Access (VEOA), Views Advanced Routing"
         - ./scripts/test5.sh
+    - name: CDPU-CPP Test Run 18
+      script:
+        - echo "Test Run 18 - Block Class, CKEditor Table Tools Toolbar, CKEditor Video Detector, Display Suite, Easy Install"
+        - ./scripts/test18.sh
 services:
   - docker
 
