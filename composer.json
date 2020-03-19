@@ -41,6 +41,7 @@
         "drupal/ds": "3.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/easy_install": "10.x-dev",
+        "drupal/editor_advanced_link": "^1.6",
         "drupal/elasticsearch_connector": "6.x-dev",
         "drupal/embed": "1.x-dev",
         "drupal/entity": "^1.0",
@@ -58,6 +59,7 @@
         "drupal/fulcrum_whitelist": "^1.1",
         "drupal/fullcalendar_view": "2.x-dev",
         "drupal/gathercontent": "4.x-dev",
+        "drupal/gdoc_field": "1.x-dev",
         "drupal/geocoder": "3.x-dev",
         "drupal/geolocation": "3.x-dev",
         "drupal/google_analytics": "2.x-dev",
@@ -74,9 +76,15 @@
         "drupal/migrate_plus": "5.x-dev",
         "drupal/migrate_source_csv": "3.x-dev",
         "drupal/migrate_tools": "5.x-dev",
+        "drupal/module_missing_message_fixer": "1.x-dev",
+        "drupal/nice_menus": "1.x-dev",
         "drupal/office_hours": "1.x-dev",
+        "drupal/page_manager": "4.x-dev",
+        "drupal/panels": "4.x-dev",
         "drupal/paragraphs": "1.x-dev",
         "drupal/pathauto": "1.x-dev",
+        "drupal/pdf": "1.x-dev",
+        "drupal/pdf_reader": "1.x-dev",
         "drupal/plupload": "1.x-dev",
         "drupal/purge": "3.x-dev",
         "drupal/purge_queuer_url": "1.x-dev",
@@ -84,6 +92,7 @@
         "drupal/recaptcha": "2.x-dev",
         "drupal/redirect": "1.x-dev",
         "drupal/redis": "1.x-dev",
+        "drupal/robotstxt": "1.x-dev",
         "drupal/rrssb": "2.x-dev",
         "drupal/rules": "3.x-dev",
         "drupal/scheduler": "1.x-dev",
@@ -91,6 +100,7 @@
         "drupal/search_api_autocomplete": "1.x-dev",
         "drupal/search_api_fast": "1.x-dev",
         "drupal/search_api_solr": "3.x-dev",
+        "drupal/seckit": "1.x-dev",
         "drupal/simple_sitemap": "3.x-dev",
         "drupal/single_datetime": "1.x-dev",
         "drupal/smtp": "^1.0-beta7",
@@ -101,6 +111,7 @@
         "drupal/ultimate_cron": "2.x-dev",
         "drupal/varnish_purge": "^1.12",
         "drupal/video_embed_field": "2.x-dev",
+        "drupal/viewerjs": "1.x-dev",
         "drupal/views_autocomplete_filters": "1.x-dev",
         "drupal/views_data_export": "^1.0@beta",
         "drupal/viewsreference": "^2.0-alpha6",
@@ -287,6 +298,12 @@
             "drupal/masquerade": {
                 "Provide a foolproof way to unmasquerade": "https://www.drupal.org/files/issues/2019-12-13/temporary%20unmask%20workaround-2962970-8.patch"
             },
+            "drupal/module_missing_message_fixer": {
+                "Remove Drush 8 Support": "https://www.drupal.org/files/issues/2019-06-27/3064592-3-remove-drush-8-support.patch"
+            },
+            "drupal/page_manager": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-17/3119021-4.patch"
+            },
             "drupal/plupload": {
                 "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2019-11-12/deprecated-3093844-2.patch"
             },
@@ -303,9 +320,15 @@
             "drupal/queue_ui": {
                 "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-02-04/3097065-11-drupal-9-compatibility.patch"
             },
+            "drupal/robotstxt": {
+                "Mark as compatible with Drupal 9": "https://www.drupal.org/files/issues/2020-02-27/3098940-10.robotstxt.Mark-as-compatible-with-Drupal-9.patch"
+            },
             "drupal/search_api": {
                 "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-03/3023170-50--prepare_for_drupal_9.patch"
-            },    
+            },
+            "drupal/seckit": {
+                "Drupal 9 compatibility related issues for Security Kit module": "https://www.drupal.org/files/issues/2020-02-12/3074080-23.patch"
+            },
             "drupal/smtp": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-02-20/drupal-9-deprecated-code-report-3042630-24.patch",
                 "Drupal 9 Compatibility - fix key in .info.yml": "https://www.drupal.org/files/issues/2020-01-27/3109130-3.patch",
