@@ -33,6 +33,11 @@ jobs:
       script:
         - echo "Test Run 6 - "Ajax View Demo, Courier, Date Recur, Dynamic Entity Reference, Editor File, Entity Clone, Entity Reference View Select, Group, Google Translate, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, TAC Lite, Unlimited Number, Views Entity Operations Access (VEOA), Views Advanced Routing"
         - ./scripts/test5.sh
+    - name: BWSC Test Run 7
+      script:
+        - echo "Test Run 7 - "Better Social Sharing Buttons, Block Excludes Pages, Content Moderation Notifications, DropzoneJS, Elasticsearch Connector Autocomplete, Entity Update, Geofield, Media Bulk Upload, Media Entity Actions, Menu Item Extras, Quick Node Clone, Sitemap, Twitter Block, Views Infinite Scroll"
+        - ./scripts/test5.sh
+        
 services:
   - docker
 
