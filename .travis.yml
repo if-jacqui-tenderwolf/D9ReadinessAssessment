@@ -27,17 +27,16 @@ jobs:
         - ./scripts/test4.sh
     - name: HCPL Test Run 5
       script:
-        - echo "Test Run 5 - "Add to Calendar, Context, CSV Serialization, External Authentication, Facets, Flag, Full Calendar View, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Migrate Source CSV, Migrate Tools, Office Hours, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Views Autocomplete Filters, Views Data Export"
+        - echo "Test Run 5 - Add to Calendar, Context, CSV Serialization, External Authentication, Facets, Flag, Full Calendar View, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Migrate Source CSV, Migrate Tools, Office Hours, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Views Autocomplete Filters, Views Data Export"
         - ./scripts/test5.sh
     - name: BCPL Test Run 6
       script:
-        - echo "Test Run 6 - "Ajax View Demo, Courier, Date Recur, Dynamic Entity Reference, Editor File, Entity Clone, Entity Reference View Select, Group, Google Translate, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, TAC Lite, Unlimited Number, Views Entity Operations Access (VEOA), Views Advanced Routing"
+        - echo "Test Run 6 - Ajax View Demo, Courier, Date Recur, Dynamic Entity Reference, Editor File, Entity Clone, Entity Reference View Select, Group, Google Translate, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, TAC Lite, Unlimited Number, Views Entity Operations Access (VEOA), Views Advanced Routing"
         - ./scripts/test5.sh
-    - name: BWSC Test Run 7
+    - name: CDPU-CPP Test Run 18
       script:
-        - echo "Test Run 7 - "Better Social Sharing Buttons, Block Excludes Pages, Content Moderation Notifications, DropzoneJS, Elasticsearch Connector Autocomplete, Entity Update, Geofield, Media Bulk Upload, Media Entity Actions, Menu Item Extras, Quick Node Clone, Sitemap, Twitter Block, Views Infinite Scroll"
-        - ./scripts/test5.sh
-        
+        - echo "Test Run 18 - Block Class, CKEditor Table Tools Toolbar, CKEditor Video Detector, Display Suite, Easy Install"
+        - ./scripts/test18.sh
 services:
   - docker
 
