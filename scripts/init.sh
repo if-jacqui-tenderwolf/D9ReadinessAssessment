@@ -38,4 +38,4 @@ fi
 # If not executing on TRAVIS, remove .git directories from composer source install from Docroot
 if [ -n $TRAVIS ]; then 
 	find ./docroot -name .git -type d | xargs rm -rf
-if
+fi
