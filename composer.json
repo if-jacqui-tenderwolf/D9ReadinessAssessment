@@ -129,6 +129,7 @@
         "drupal/search_api_autocomplete": "1.x-dev",
         "drupal/search_api_fast": "1.x-dev",
         "drupal/search_api_solr": "3.x-dev",
+        "drupal/search_exclude": "1.x-dev",
         "drupal/seckit": "1.x-dev",
         "drupal/simple_sitemap": "3.x-dev",
         "drupal/single_datetime": "1.x-dev",
@@ -384,6 +385,9 @@
             },
             "drupal/search_api": {
                 "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-03/3023170-50--prepare_for_drupal_9.patch"
+            },
+            "drupal/search_exclude": {
+                "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
             },
             "drupal/siteimprove": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/siteimprove-3074378-1.patch"
