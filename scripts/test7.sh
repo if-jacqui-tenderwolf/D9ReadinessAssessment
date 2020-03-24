@@ -30,9 +30,9 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm
 set -e -o pipefail
 
 # Elasticsearch Connector Autocomplete
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en elasticsearch_connector_autocomp -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en search_api elasticsearch_connector_autocomp -y"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/elasticsearch_connector_autocomp"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall elasticsearch_connector_autocomp -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall elasticsearch_connector_autocomp search_api -y"
 
 # Entity Update - this module needs attention. It installed itself in the wrong place and then created problems. The patch doesn't work. 
 # set +e

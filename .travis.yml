@@ -32,7 +32,16 @@ jobs:
     - name: BCPL Test Run 6
       script:
         - echo "Test Run 6 - Ajax View Demo, Courier, Date Recur, Dynamic Entity Reference, Editor File, Entity Clone, Entity Reference View Select, Group, Google Translate, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, TAC Lite, Unlimited Number, Views Entity Operations Access (VEOA), Views Advanced Routing"
-        - ./scripts/test5.sh
+        - ./scripts/test6.sh
+    - name: BWSC Test Run 7
+      script:
+        - echo "Test Run 7 - Better Social Sharing Buttons, Block Exclude Pages, Content Moderation Notifications, DropzoneJS, Elasticsearch Connector Autocomplete, Entity Update, Geofield, Media Bulk Upload, Media Entity Actions, Menu Item Extras, Quick Node Clone, Sitemap, Twitter Block, Views Infinite Scroll"
+        - ./scripts/test7.sh
+    - name: COBB Test Run 8
+      script:
+        - echo "Test Run 8 - Add To Any, Date Recur Interactive, Menu Trail buy Path, Optional dend DAte, Permissions Filters, S3FS, S3FS Cors Scheduler Content Moderation Integration, Selective Bettere Exposed Filters, Siteimprove, Twig Field Value, User Default Page, Views Taxonomy Term Name Depth"
+        - ./scripts/test8.sh
+
     - name: CDPU-CPP Test Run 18
       script:
         - echo "Test Run 18 - Block Class, CKEditor Table Tools Toolbar, CKEditor Video Detector, Display Suite, Easy Install"
@@ -94,5 +103,7 @@ before_script:
   - chmod 0644 ./docroot/sites/default/settings.php
   - chmod 0777 ./docroot/sites/default/settings.local.php
   - cp ./drupal/settings.travis.php ./docroot/sites/default/settings.local.php
+  # Second compoesr install to re-install modules removed due to patching during installation of "require-dev" modules
+  - composer install
   # Run a cache reset on the drupal install
   - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"

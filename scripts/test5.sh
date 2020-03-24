@@ -133,10 +133,10 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall video_embed_field -y"
 set -e -o pipefail
 
-# Views Autocomplete Filters
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en views_autocomplete_filters -y"
+# Views Autocomplete Filters -- depends on search_api to complete tests
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en search_api views_autocomplete_filters -y"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/views_autocomplete_filters"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall views_autocomplete_filters -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall views_autocomplete_filters search_api -y"
 
 # Views Data Export 
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en views_data_export -y"
