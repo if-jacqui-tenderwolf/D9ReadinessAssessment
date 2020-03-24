@@ -77,6 +77,7 @@ before_install:
 
 before_script:
   # initial composer build process
+  - if [ -n "$GITHUB_COMPOSER_TOKEN" ]; then composer config github-oauth.github.com ${GITHUB_COMPOSER_TOKEN}; fi;
   - composer install
   - curl https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php -o ./docroot/sites/default/default.settings.php
   - docker-compose up -d --build
