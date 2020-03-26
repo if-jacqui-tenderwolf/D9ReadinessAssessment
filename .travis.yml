@@ -41,7 +41,42 @@ jobs:
       script:
         - echo "Test Run 8 - Add To Any, Date Recur Interactive, Menu Trail buy Path, Optional dend DAte, Permissions Filters, S3FS, S3FS Cors Scheduler Content Moderation Integration, Selective Bettere Exposed Filters, Siteimprove, Twig Field Value, User Default Page, Views Taxonomy Term Name Depth"
         - ./scripts/test8.sh
-
+    - name: DCOAG Test Run 9
+      script:
+        - echo "Test Run 9 - "
+        - ./scripts/test9.sh
+    - name: DENV Test Run 10
+      script:
+        - echo "Test Run 10 - "
+        - ./scripts/test10.sh
+    - name: MCPL Test Run 11
+      script:
+        - echo "Test Run 11 - "
+        - ./scripts/test11.sh
+    - name: SCVW Test Run 12
+      script:
+        - echo "Test Run 12 - "
+        - ./scripts/test12.sh
+    - name: STDL Test Run 13
+      script:
+        - echo "Test Run 13 - "
+        - ./scripts/test13.sh
+    - name: TCCL Test Run 14
+      script:
+        - echo "Test Run 14 - "
+        - ./scripts/test14.sh
+    - name: PWSA Test Run 15
+      script:
+        - echo "Test Run 15 - "
+        - ./scripts/test15.sh
+    - name: NORMOK Test Run 16
+      script:
+        - echo "Test Run 16 - "
+        - ./scripts/test16.sh
+    - name: CDPU-WPC Test Run 17
+      script:
+        - echo "Test Run 17 - "
+        - ./scripts/test17.sh
     - name: CDPU-CPP Test Run 18
       script:
         - echo "Test Run 18 - Block Class, CKEditor Table Tools Toolbar, CKEditor Video Detector, Display Suite, Easy Install"
