@@ -35,5 +35,7 @@ if [ ! -f "docroot/sites/default/files/.htaccess" ]; then
 	cp ./drupal/htaccess.public ./docroot/sites/default/files/.htaccess
 fi
 
-# Remove .git directories from composer source install from Docroot
-find ./docroot -name .git -type d | xargs rm -rf
+# If not executing on TRAVIS, remove .git directories from composer source install from Docroot
+if [ -n $TRAVIS ]; then 
+	find ./docroot -name .git -type d | xargs rm -rf
+fi
