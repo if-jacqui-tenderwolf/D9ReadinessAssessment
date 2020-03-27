@@ -43,7 +43,7 @@ jobs:
         - ./scripts/test8.sh
     - name: DCOAG Test Run 9
       script:
-        - echo "Test Run 9 - "
+        - echo "Test Run 9 - Administer Users By Role, Anchor Link, Autocomplete Deluxe, Background Image Formatter, Context Active Trail, Default Content, Field Block, FontAwesome icon Picker, FontAwesome Menu Icons, FontYourFace, Media Entity Audio, Media Entity Browser, Menu Admin Per Menu, Path Redirect Import, Responsive Favicons, Role Delegation, Select2, Share Everywhere, SVG Image, Tab Toolbar, Taxonomy Access Fix, Text with Title, Toolbar Menu, Views Bulk Operations"
         - ./scripts/test9.sh
     - name: DENV Test Run 10
       script:
