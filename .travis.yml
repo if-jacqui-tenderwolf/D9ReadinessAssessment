@@ -47,7 +47,7 @@ jobs:
         - ./scripts/test9.sh
     - name: DENV Test Run 10
       script:
-        - echo "Test Run 10 - "
+        - echo "Test Run 10 - Entity Pager, Entity Reference Tab Formatter, JuiceBox, Leaflet, Masonry, Max Length, Search Exclude, Search Exclude NID, ShareThis, SimpleSAML PHP Auth, Slack"
         - ./scripts/test10.sh
     - name: MCPL Test Run 11
       script:

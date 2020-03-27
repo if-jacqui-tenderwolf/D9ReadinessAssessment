@@ -415,6 +415,9 @@
             "drupal/inline_entity_form": {
                 "Support adding new entities when translating": "https://www.drupal.org/files/issues/2020-02-19/2822764-53.patch"
             },
+            "drupal/juicebox": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-05/updated-3042821-4.patch"
+            },
             "drupal/libraries":{
                 "Coding Standards": "https://www.drupal.org/files/issues/2019-08-15/3075081-coding-standard_0.patch",
                 "Fix subclassing and stop overriding constructors in libraries\\Plugin\\libraries\\Type\\PhpFileLibraryType":"https://www.drupal.org/files/issues/2020-02-13/libraries-Fix_subclassing_and_stop_overriding_constructors_in_libraries_Plugin_libraries_Type_PhpFileLibraryType-3113477-2-D8.patch",
@@ -426,6 +429,9 @@
             "drupal/linkit": {
                 "Drupal 9 Deprecated Code Report for LinkIt module":"https://www.drupal.org/files/issues/2020-01-28/linkit-d9-3042631-11.patch",
                 "Linkit for Link field":"https://www.drupal.org/files/issues/2020-02-28/linkit_for_link_field-2712951-154.patch"
+            },
+            "drupal/masonry": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-05-14/masonry-3042856-2.patch"
             },
             "drupal/masquerade": {
                 "Provide a foolproof way to unmasquerade": "https://www.drupal.org/files/issues/2019-12-13/temporary%20unmask%20workaround-2962970-8.patch"
@@ -477,7 +483,9 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-10-11/1-select2-drupal9-compatibility.patch"
             },
             "drupal/share_everywhere": {
-                "DRupal 9 Deprecated Status": "https://www.drupal.org/files/issues/2020-01-25/3108784-path-manager.patch"
+                "Drupal 9 Deprecated Status": "https://www.drupal.org/files/issues/2020-01-25/3108784-path-manager.patch"
+            },"drupal/sharethis": {
+                "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
             },
             "drupal/siteimprove": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/siteimprove-3074378-1.patch"
