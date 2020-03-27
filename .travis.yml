@@ -11,7 +11,7 @@ jobs:
   include:
     - name: TabRasa8 Test Run 1
       script:
-        - echo "Test Run 1 - Address, Admin Toolbar, AdvAgg, Allowed Formats, Audit Files, Better Exposed Filters, Block Field, Captcha, Cloudflare, Components!, Config Filter, Config Ignore, Config Split, CTools, Date Popup, Devel, Diff, Eash Breadcrumb, Elasticsearch Connector, Embed"
+        - echo "Test Run 1 - Address, Add to Calendar, Admin Toolbar, AdvAgg, Allowed Formats, Audit Files, Better Exposed Filters, Block Field, Captcha, Cloudflare, Components!, Config Filter, Config Ignore, Config Split, CTools, Date Popup, Devel, Diff, Eash Breadcrumb, Elasticsearch Connector, Embed"
         - ./scripts/test1.sh
     - name: TabRasa8 Test Run 2
       script:
@@ -27,7 +27,7 @@ jobs:
         - ./scripts/test4.sh
     - name: HCPL Test Run 5
       script:
-        - echo "Test Run 5 - Add to Calendar, Context, CSV Serialization, External Authentication, Facets, Flag, Full Calendar View, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Migrate Source CSV, Migrate Tools, Office Hours, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Views Autocomplete Filters, Views Data Export"
+        - echo "Test Run 5 - Context, CSV Serialization, External Authentication, Facets, Flag, Full Calendar View, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Migrate Source CSV, Migrate Tools, Office Hours, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Views Autocomplete Filters, Views Data Export"
         - ./scripts/test5.sh
     - name: BCPL Test Run 6
       script:
