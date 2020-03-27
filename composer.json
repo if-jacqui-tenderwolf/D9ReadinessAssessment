@@ -258,10 +258,6 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://if-satis.s3.us-east-2.amazonaws.com"
-        },
-        {
-            "type": "composer",
             "url": "https://asset-packagist.org"
         },
         {
@@ -355,6 +351,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/address": {
+                "Require Drupal 8.8": "https://www.drupal.org/files/issues/2020-03-19/3093193-3-require-drupal-88.patch"
+            },
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
             },
