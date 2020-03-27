@@ -14,7 +14,7 @@
         "drupal/address": "1.x-dev",
         "drupal/address_map_link": "1.x-dev",
         "drupal/addtoany": "1.x-dev",
-        "drupal/addtocalendar": "^4.0",
+        "drupal/addtocalendar": "3.x-dev",
         "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.4",
         "drupal/administerusersbyrole": "3.x-dev",
@@ -353,6 +353,9 @@
         "patches": {
             "drupal/address": {
                 "Require Drupal 8.8": "https://www.drupal.org/files/issues/2020-03-19/3093193-3-require-drupal-88.patch"
+            },
+            "drupal/addtocalendar": {
+                "New Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-27/3122917-2-drupal-9-code-deficiency.patch"
             },
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
