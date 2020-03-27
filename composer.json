@@ -44,7 +44,7 @@
         "drupal/config_split": "1.x-dev",
         "drupal/console": "^1.0",
         "drupal/content_moderation_notifications": "3.x-dev",
-        "drupal/context": "^4.0@beta",
+        "drupal/context": "4.x-dev",
         "drupal/context_active_trail": "1.x-dev",
         "drupal/contribute": "1.x-dev",
         "drupal/core-composer-scaffold": "^8.8",
@@ -378,6 +378,9 @@
             },
             "drupal/config_split": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2019-12-12/3042682-15-deprecated-code-report.patch"
+            },
+            "drupal/context": {
+                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-03-27/3042764-6.patch"
             },
             "drupal/easy_install": {
                 "Compatibility with Drupal 9":"https://www.drupal.org/files/issues/2020-03-16/3120071-2.patch",
