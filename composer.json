@@ -182,6 +182,7 @@
         "drupal/select2": "1.x-dev",
         "drupal/share_everywhere": "1.x-dev",
         "drupal/sharethis": "2.x-dev",
+        "drupal/simple_gmap": "^2.0",
         "drupal/simple_sitemap": "3.x-dev",
         "drupal/simplesamlphp_auth": "3.x-dev",
         "drupal/single_datetime": "1.x-dev",
