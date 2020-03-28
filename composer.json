@@ -37,8 +37,10 @@
         "drupal/ckeditor_videodetector": "1.x-dev",
         "drupal/cloudflare": "1.x-dev",
         "drupal/comment_notify": "1.x-dev",
+        "drupal/commerce_checkout": "^2.17",
         "drupal/communico": "2.x-dev",
         "drupal/components": "2.x-dev",
+        "drupal/config_devel": "1.x-dev",
         "drupal/config_filter": "2.x-dev",
         "drupal/config_ignore": "3.x-dev",
         "drupal/config_split": "1.x-dev",
@@ -89,6 +91,7 @@
         "drupal/file_entity": "2.x-dev",
         "drupal/flag": "4.x-dev",
         "drupal/flood_unblock": "2.x-dev",
+        "drupal/focal_point": "1.x-dev",
         "drupal/fontawesome": "2.x-dev",
         "drupal/fontawesome_menu_icons": "1.x-dev",
         "drupal/fontyourface": "3.x-dev",
@@ -190,7 +193,7 @@
         "drupal/siteimprove": "1.x-dev",
         "drupal/sitemap": "2.x-dev",
         "drupal/slack": "1.x-dev",
-        "drupal/smart_ip": "3.x-dev",
+        "drupal/smart_ip": "4.x-dev",
         "drupal/smtp": "^1.0-beta7",
         "drupal/social_media_links": "^2.6",
         "drupal/structure_sync": "1.x-dev",
@@ -220,8 +223,8 @@
         "drupal/views_contextual_filters_or": "1.x-dev",
         "drupal/views_data_export": "^1.0@beta",
         "drupal/views_infinite_scroll": "1.x-dev",
-        "drupal/views_lazy_load": "1.x-dev",
         "drupal/views_taxonomy_term_name_depth": "6.x-dev",
+        "drupal/views_timelinejs": "3.x-dev",
         "drupal/viewsreference": "^2.0-alpha6",
         "drupal/webform": "^5.0",
         "drupal/youtube": "^1.0",
@@ -372,11 +375,17 @@
             "drupal/components": {
                 "Drupal 9 Deprecated Code Report for Components module": "https://www.drupal.org/files/issues/2020-03-13/components-twig-3112929-5.patch"
             },
+            "drupal/config_devel": {
+                "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-14/deprecated-3094340-2.patch"
+            },
             "drupal/config_split": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2019-12-12/3042682-15-deprecated-code-report.patch"
             },
             "drupal/context": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-03-27/3042764-6.patch"
+            },
+            "drupal/draggableviews": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-03/draggableviews-3051083-7.patch"
             },
             "drupal/easy_install": {
                 "Compatibility with Drupal 9":"https://www.drupal.org/files/issues/2020-03-16/3120071-2.patch",
@@ -402,6 +411,9 @@
             "drupal/fieldblock": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-10-12/fieldblock-deprecated_code-3087563-2-8x_2x_dev.patch"
             },
+            "drupal/force_password_change": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-25/3096554-2.patch"
+            },
             "drupal/google_analytics": {
                 "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-01-03/3072207-26.patch"
             },
@@ -411,11 +423,17 @@
             "drupal/group": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-11/updated-3042771-8.patch"
             },
+            "drupal/hti": {
+                "Replace drupal_set_message() with messenger Service and drupal 9 compatability": "https://www.drupal.org/files/issues/2020-03-20/3121085-2.patch"
+            },
             "drupal/inline_entity_form": {
                 "Support adding new entities when translating": "https://www.drupal.org/files/issues/2020-02-19/2822764-53.patch"
             },
             "drupal/juicebox": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-05/updated-3042821-4.patch"
+            },
+            "drupal/key_value_field": {
+                "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-03-03/compatibilty-3116509-3.patch"
             },
             "drupal/libraries":{
                 "Coding Standards": "https://www.drupal.org/files/issues/2019-08-15/3075081-coding-standard_0.patch",
@@ -450,6 +468,9 @@
             "drupal/plupload": {
                 "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2019-11-12/deprecated-3093844-2.patch"
             },
+            "drupal/protected_pages": {
+                "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-01-25/Drupal_9_compatibility-3108123-4.patch"
+            },
             "drupal/purge": {
                 "Replace deprecated function drupal_set_message(). (D9)": "https://www.drupal.org/files/issues/2019-10-11/1-purge-drupal9-replace-drupalsetmessage.patch",
                 "Replace deprecated method aliasManager() of class Drush\\Drush. (D9)": "https://www.drupal.org/files/issues/2019-10-12/1-purge-drupal9-replace-aliasmanager.patch"
@@ -483,8 +504,12 @@
             },
             "drupal/share_everywhere": {
                 "Drupal 9 Deprecated Status": "https://www.drupal.org/files/issues/2020-01-25/3108784-path-manager.patch"
-            },"drupal/sharethis": {
+            },
+            "drupal/sharethis": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
+            },
+            "drupal/structure_sync": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
             },
             "drupal/siteimprove": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/siteimprove-3074378-1.patch"
