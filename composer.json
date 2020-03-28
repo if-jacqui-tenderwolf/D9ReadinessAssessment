@@ -506,6 +506,9 @@
             "drupal/sharethis": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
             },
+            "drupal/site_alert": {
+                "Fix namespacing on Functional Javascript test": "https://www.drupal.org/files/issues/2020-03-28/3123154-2.patch"
+            },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
             },
