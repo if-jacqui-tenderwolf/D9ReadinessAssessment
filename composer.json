@@ -357,7 +357,8 @@
                 "New Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-27/3122917-2-drupal-9-code-deficiency.patch"
             },
             "drupal/better_exposed_filters": {
-                "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
+                "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch",
+                "Drupal 9 compatibility - fix namespacing on tests": "https://www.drupal.org/files/issues/2020-03-28/3123071-2.patch"
             },
             "drupal/block_field": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-30/block-field-d9-3042702-3.patch",
