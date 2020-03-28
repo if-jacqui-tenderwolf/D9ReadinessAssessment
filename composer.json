@@ -361,10 +361,7 @@
                 "Drupal 9 compatibility - fix namespacing on tests": "https://www.drupal.org/files/issues/2020-03-28/3123071-2.patch"
             },
             "drupal/block_field": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-30/block-field-d9-3042702-3.patch",
-                "Allow negating the block selection": "https://www.drupal.org/files/issues/2019-04-24/allow_negating_the_block_selection-2898354-7.patch",
-                "Add proper alter hooks for field rendering": "https://www.drupal.org/files/issues/2019-11-17/2978883-block-field-alter-hooks-4.patch",
-                "BlockFieldLabelFormatter CacheableMetadata::createFromRenderArray points to incorrect array":"https://www.drupal.org/files/issues/2020-02-28/3068281-9-8.7.patch"
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042072-12.patch"
             },
             "drupal/block_class": {
                 "Drupal 9 compatibility":"https://www.drupal.org/files/issues/2020-01-29/3109188-4.patch"
