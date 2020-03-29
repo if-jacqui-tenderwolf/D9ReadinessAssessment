@@ -31,7 +31,7 @@
         "drupal/block_class": "1.x-dev",
         "drupal/block_exclude_pages": "1.x-dev",
         "drupal/block_field": "1.x-dev",
-        "drupal/captcha": "^1.0",
+        "drupal/captcha": "1.x-dev",
         "drupal/ckeditor_codemirror": "2.x-dev",
         "drupal/ckeditor_tabletoolstoolbar": "1.x-dev",
         "drupal/ckeditor_videodetector": "1.x-dev",
@@ -166,7 +166,7 @@
         "drupal/responsive_favicons": "1.x-dev",
         "drupal/rng_contact": "^1.0@beta",
         "drupal/rng_quick": "^1.1",
-        "drupal/robotstxt": "1.x-dev",
+        "drupal/robotstxt": "^1.4",
         "drupal/role_delegation": "1.x-dev",
         "drupal/roleassign": "1.x-dev",
         "drupal/rrssb": "2.x-dev",
@@ -369,6 +369,9 @@
             "drupal/block_field": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-18/3042702-10.patch"
             },
+            "drupal/captcha": {
+                "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
+            },
             "drupal/cloudflare": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
                 "Cloudflarepurge: Allow for altering targets before purging": "https://www.drupal.org/files/issues/2019-04-01/3044887-n2.patch"
@@ -497,11 +500,8 @@
             "drupal/responsive_favicons": {
                 "D9 deprecation report": "https://www.drupal.org/files/issues/2019-11-21/d9-deprecation-fix-3094678-09.patch"
             },
-            "drupal/robotstxt": {
-                "Mark as compatible with Drupal 9": "https://www.drupal.org/files/issues/2020-02-27/3098940-10.robotstxt.Mark-as-compatible-with-Drupal-9.patch"
-            },
             "drupal/search_api": {
-                "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-03/3023170-50--prepare_for_drupal_9.patch"
+                "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-24/3023170-56--prepare_for_drupal_9.patch"
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
@@ -563,6 +563,9 @@
             },
             "drupal/user_default_page": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-01-25/3108864-2_0.patch"
+            },
+            "drupal/video_embed_field": {
+                "Fixing namespace for oEmbedUpdateTest, remove deprecated Drush command": "https://www.drupal.org/files/issues/2020-03-28/3123204-2.patch"
             },
             "drupal/adminimal_theme": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-19/deprecated-3075752-2.patch",
