@@ -31,7 +31,7 @@
         "drupal/block_class": "1.x-dev",
         "drupal/block_exclude_pages": "1.x-dev",
         "drupal/block_field": "1.x-dev",
-        "drupal/captcha": "^1.0",
+        "drupal/captcha": "1.x-dev",
         "drupal/ckeditor_codemirror": "2.x-dev",
         "drupal/ckeditor_tabletoolstoolbar": "1.x-dev",
         "drupal/ckeditor_videodetector": "1.x-dev",
@@ -166,7 +166,7 @@
         "drupal/responsive_favicons": "1.x-dev",
         "drupal/rng_contact": "^1.0@beta",
         "drupal/rng_quick": "^1.1",
-        "drupal/robotstxt": "1.x-dev",
+        "drupal/robotstxt": "^1.4",
         "drupal/role_delegation": "1.x-dev",
         "drupal/roleassign": "1.x-dev",
         "drupal/rrssb": "2.x-dev",
@@ -356,15 +356,21 @@
             "drupal/addtocalendar": {
                 "New Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-27/3122917-2-drupal-9-code-deficiency.patch"
             },
+            "drupal/advagg": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-10/3118074-4.patch"
+            },
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch",
                 "Drupal 9 compatibility - fix namespacing on tests": "https://www.drupal.org/files/issues/2020-03-28/3123071-2.patch"
             },
-            "drupal/block_field": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042072-12.patch"
-            },
             "drupal/block_class": {
                 "Drupal 9 compatibility":"https://www.drupal.org/files/issues/2020-01-29/3109188-4.patch"
+            },
+            "drupal/block_field": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-18/3042702-10.patch"
+            },
+            "drupal/captcha": {
+                "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
             },
             "drupal/cloudflare": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
@@ -385,6 +391,9 @@
             "drupal/draggableviews": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-03/draggableviews-3051083-7.patch"
             },
+            "drupal/easy_breadcrumb": {
+                "Drupal 9 Deprecated Code": "https://www.drupal.org/files/issues/2020-02-11/replace_method-3102112-4.patch"
+            },
             "drupal/easy_install": {
                 "Compatibility with Drupal 9":"https://www.drupal.org/files/issues/2020-03-16/3120071-2.patch",
                 "Call to deprecated function file_scan_directory()":"https://www.drupal.org/files/issues/2020-03-16/3120075-2.patch"
@@ -399,6 +408,9 @@
             },
             "drupal/entity_clone": {
                 "keep this module code up to date and preparing for Drupal 9": "https://www.drupal.org/files/issues/2019-05-14/entity_clone-3032476-4.patch"
+            },
+            "drupal/environment_indicator": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042790-14_0.patch"
             },
             "drupal/facets": {
                 "Drupal 9 readiness / compatibility": "https://www.drupal.org/files/issues/2020-03-13/3090592-27.patch"
@@ -488,11 +500,8 @@
             "drupal/responsive_favicons": {
                 "D9 deprecation report": "https://www.drupal.org/files/issues/2019-11-21/d9-deprecation-fix-3094678-09.patch"
             },
-            "drupal/robotstxt": {
-                "Mark as compatible with Drupal 9": "https://www.drupal.org/files/issues/2020-02-27/3098940-10.robotstxt.Mark-as-compatible-with-Drupal-9.patch"
-            },
             "drupal/search_api": {
-                "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-03/3023170-50--prepare_for_drupal_9.patch"
+                "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-24/3023170-56--prepare_for_drupal_9.patch"
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
@@ -505,6 +514,9 @@
             },
             "drupal/sharethis": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
+            },
+            "drupal/site_alert": {
+                "Fix namespacing on Functional Javascript test": "https://www.drupal.org/files/issues/2020-03-28/3123154-2.patch"
             },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
@@ -552,68 +564,15 @@
             "drupal/user_default_page": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-01-25/3108864-2_0.patch"
             },
+            "drupal/video_embed_field": {
+                "Fixing namespace for oEmbedUpdateTest, remove deprecated Drush command": "https://www.drupal.org/files/issues/2020-03-28/3123204-2.patch"
+            },
             "drupal/adminimal_theme": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-19/deprecated-3075752-2.patch",
                 "Table is cropped in vertical tabs": "https://www.drupal.org/files/issues/2019-09-11/table_is_cropped_in_vertical_tabs-3080442-3.patch",
                 "Some hovered buttons text invisible": "https://www.drupal.org/files/issues/2019-10-15/invisible_button_text-3087937-2.patch",
                 "Error states of checkboxes": "https://www.drupal.org/files/issues/2020-01-06/3032036-5.patch"
             }
-        },
-        "_drupal_9_readiness_assessment": [
-            "Address -- 1.x-dev,",
-            "Admin Toolbar -- 2.0 stable version is D9 ready",
-            "Advanced CSS/JS Aggregation -- dev version 4.x is supposed to be D9 ready, but fails scan",
-            "Allowed Formats -- 1.x-dev version is D9 ready",
-            "Better Exposed filters Drupal 9 Readiness outstanding issues: https://www.drupal.org/project/better_exposed_filters/issues/3114031",
-            "Block field Drupal 9 readiness outstanding issues:  https://www.drupal.org/project/block_field/issues/3042702",
-            "Cloudflare Drupal 9 Readiness outstanding issues (patch only partially addresses): https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
-            "Components 2.x-dev version is D9 ready",
-            "Config Filter 2.x-dev version, module is ready, tests are failing scan",
-            "Config Ignore 3.x-dev version is D9 ready",
-            "Config Split 1.x-dev version still faiiling scan",
-            "CTools:  3.x-dev version Drupal 9 ready",
-            "Date Popup: 1.x-dev version, passes scanning",
-            "Easy Breadcrumb:  1.x-dev version -- module is D9 ready, tests are failing",
-            "ElasticSearch Connector Drupal 9 Readiness -- no patch available, no work on version 6, which is the version we use",
-            "Embed -- dev version is D9 ready",
-            "Entity Browser -- 2.x-dev is D9 ready",
-            "Google Analytics -- 2.x-dev,",
-            "Inline entity Form Drupal 9 Readiness -- no assessment has been completed, no patch available",
-            "Libraries API Drupal 9 Readiness -- https://www.drupal.org/project/libraries/issues/3110305, support for third party libraries is being added to Drupal 8.9, this module will no lnger be needed.  https://www.drupal.org/project/libraries/issues/3110305",
-            "Linkit Drupal 9 Readiness -- https://www.drupal.org/files/issues/2020-01-28/linkit-d9-3042631-11.patch, patch applied",
-            "Masquerade Drupal 9 Readiness -- running dev version, already D9 ready, https://www.drupal.org/project/masquerade/issues/3042713",
-            "Plupload Drupal 9 Readiness -- running beta version, patch applied for D9 readiness, https://www.drupal.org/project/plupload/issues/3093844",
-            "Purge Drupal 9 Readiness -- running dev version, partially patched for D9 readiness, remaining issues are in issue queue",
-            "URLs queuer (purge_queuer_url) Drupal 9 Readiness, no active issue in issue queue to address",
-            "SMTP Drupal 9 Readiness -- running beta7 version, applied patch ",
-            "Ultimate Cron Drupal 9 Readiness -- open issue in issue queue, no work currently, https://www.drupal.org/project/ultimate_cron/issues/3110312"
-        ],
-        "_modules_not_stable": [
-            "Address -- dev version, under active development",
-            "Advanced CSS / JS Aggregation -- dev version, under active development",
-            "Better Exposed Filters -- dev version, under active development",
-            "Block field -- dev version, patched for D9 readiness, no active development since April 2019",
-            "Cloudflare -- dev version, patched for D9 readiness (partial), no active development since March 2019",
-            "Components 2.x-dev version, under active development",
-            "Config Filter 2.x-dev version, under active development",
-            "Config Ignore 3.x-dev version, under active development",
-            "Config Split 1.x-dev version, under active development",
-            "CTools:  3.x-dev version, under active development",
-            "Date Popup -- dev version appears to be D9 ready, no active development since October 2018",
-            "Easy Breadcrumb:  1.x-dev version D9 ready for module (not for tests), under active development",
-            "ElasticSearch Connector -- dev version, no active development since October 2019",
-            "Embed -- dev version is D9 ready, minimally maintained, last updated Jan 2020",
-            "Entity Browser -- 2.x-dev, actively maintained",
-            "Google Analytics -- 2.x-dev,",
-            "Inline Entity Form -- rc3 version, under active development",
-            "Libraries API -- dev version, no active development since June 2019",
-            "Linkit module -- dev version, patched for D9 readiness, under active development",
-            "Masquerade -- dev version, is D8 ready, under active development",
-            "Plupload -- beta2 version, no active development since December 2018",
-            "Purge -- dev version, under active development",
-            "URLs queuer (purge_queuer_url) -- rc1 version, no active development since September 2017",
-            "SMTP -- beta version, under active development",
-            "Ultimate Cron -- dev version, no active development since February 2019"
-        ]
+        }
     }
 }

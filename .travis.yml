@@ -23,7 +23,7 @@ jobs:
         - ./scripts/test3.sh
     - name: TabRasa8 Test Run 4
       script:
-        - echo "Test Run 4 - IF Varnish Purge Tags, Views Reference, Webform, Youtube"
+        - echo "Test Run 4 - Site Alert"
         - ./scripts/test4.sh
     - name: HCPL Test Run 5
       script:
