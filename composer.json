@@ -359,6 +359,16 @@
             "drupal/advagg": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-10/3118074-4.patch"
             },
+            "drupal/auditfiles": {
+                "Hook help is missing": "https://www.drupal.org/files/issues/2020-03-29/2991570-7.patch",
+                "\\Drupal::config() calls should be avoided in classes use dependency injection": "https://www.drupal.org/files/issues/2018-08-28/config_dependency_2995456-2.patch",
+                "Remove dependencies injection of DatabaseConnection , configuration and entityfieldmanager": "https://www.drupal.org/files/issues/2018-08-31/entityFieldManager_Dependencies.patch",
+                "Remove dependency injection of config, database connection and entityFileManager from all files.":"https://www.drupal.org/files/issues/2018-08-31/remove_DI-2996412-5.patch",
+                "Remove dependency injection of date.formatter service": "https://www.drupal.org/files/issues/2018-09-04/remove_date.formatter_dependencyInjection.patch",
+                "Remove Dependency injection of stream_wrapper_manager": "https://www.drupal.org/files/issues/2018-09-04/remove_stream_wrapper_manager_DI.patch",
+                "README.txt does not follow best practice":"https://www.drupal.org/files/issues/2018-09-11/auditfiles-README-2998775-2.patch",
+                "D9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-29/3004280-12.patch"
+            },
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch",
                 "Drupal 9 compatibility - fix namespacing on tests": "https://www.drupal.org/files/issues/2020-03-28/3123071-2.patch"
