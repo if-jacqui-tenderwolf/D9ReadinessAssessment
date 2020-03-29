@@ -20,13 +20,6 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/ckeditor_videodetector" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall ckeditor_videodetector -y"
 
-# Display Suite version 3.x -- fails scan, probably because all D9 work is on 4.x-dev, which currently cannot be enabled with Drupal 8.8
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en ds layout_discovery ds_extras ds_switch_view_mode devel ds_devel -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/ds" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall ds_switch_view_mode ds_devel devel ds_extras layout_discovery ds -y"
-set -e -o pipefail
-
 # Easy Install
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en easy_install -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/easy_install" && \
@@ -36,13 +29,6 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en editor_advanced_link -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/editor_advanced_link" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall editor_advanced_link -y"
-
-# Embedded Google Docs Viewer
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en gdoc_field -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/gdoc_field" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall gdoc_field -y"
-set -e -o pipefail
 
 # Module Missing Message Fixer
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en module_missing_message_fixer -y" && \
@@ -58,13 +44,6 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en page_manager -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/page_manager" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall page_manager -y"
-
-# Panels
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en ctools layout_discovery page_manager panels -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/panels" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall panels page_manager layout_discovery ctools -y"
-set -e -o pipefail
 
 # PDF
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en pdf -y" && \
@@ -85,10 +64,3 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en seckit -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/seckit" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall seckit -y"
-
-# ViewerJS
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en viewerjs -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/viewerjs" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall viewerjs -y"
-set -e -o pipefail
