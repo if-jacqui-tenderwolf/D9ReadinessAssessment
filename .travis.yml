@@ -9,43 +9,43 @@ php:
 
 jobs:
   include:
-    - name: TabRasa8 Test Run 1
+    - name: Test Run 1
       script:
         - echo "Test Run 1 - Address, Add to Calendar, Admin Toolbar, Allowed Formats, Better Exposed Filters, Block Field, Cloudflare, Components!, Config Ignore, Context CTools, Date Popup, Diff, Easy Breadcrumb, Embed"
         - ./scripts/test1.sh
-    - name: TabRasa8 Test Run 2
+    - name: Test Run 2
       script:
         - echo "Test Run 2 - Entity, Entity Browser, External Links, Field Group, FontAwesome, Inline Entity Form, LinkIt, MailSystem, Masquerade, Menu Block"
         - ./scripts/test2.sh
-    - name: TabRasa8 Test Run 1&2 Fails
+    - name: Test Run 1&2 Fails
       script:
         - echo "Test Run 1&2 Fails - AdvAgg, Audit Files, Captcha, Config Filter, Config Split, Devel, Elasticsearch Connector, Entity Embed, Entity Reference Revisions, Environment Indicator, File Entity, Geocoder, Geolocation, Google Analytics, Libraries API"
         - ./scripts/testsfail1.sh
-    - name: TabRasa8 Test Run 3
+    - name: Test Run 3
       script:
         - echo "Test Run 3 - PathAuto, Purge Queuer URL, Simple Sitemap, Site Alert, SMTP, Social Media Links, Token, Varnish Purge"
         - ./scripts/test3.sh
-    - name: TabRasa8 TestRun 3&4 Fails
+    - name: TestRun 3&4 Fails
       script:
         - echo "Test Run 3&4 Fails - Metatag, Paragraphs, Plupload, Purge, RECaptcha, Redirect, Redis, Scheduler, Search API, Search API Autocomplete, Twig Tweak, Typed Data, Ultimate Cron, Webform, Youtube"
         - ./scripts/testsfail3.sh
-    - name: HCPL Test Run 5
+    - name: Test Run 5
       script:
         - echo "Test Run 5 - CSV Serialization, External Authentication, Full Calendar View, Migrate Source CSV, Migrate Tools, Office Hours, Views Autocomplete Filters, Views Data Export"
         - ./scripts/test5.sh
-    - name: BCPL Test Run 6
+    - name: Test Run 6
       script:
         - echo "Test Run 6 - Ajax View Demo, Dynamic Entity Reference, Entity Reference View Select, Google Translate, TAC Lite, Unlimited Number"
         - ./scripts/test6.sh
-    - name: TabRasa8 TestRun 5&6 Fails
+    - name: TestRun 5&6 Fails
       script:
         - echo "Test Run 5&6 Fails - Facets, Flag, Gather Content, HTML Formatter, Media Entity Image, Migrate Plus, Queue UI, RRSSB, Search API Fast, Search API SOLR, Single DateTime, Video Embed Field, Courier, Date Recur, Editor File, Entity Clone, Group, Insert, Permissions by Term, RNG, RNG Contact, RNG Quick, Search Exclude, Views Entity Operations Access (VEOA), Views Advanced Routing"
         - ./scripts/testsfail5.sh
-    - name: BWSC Test Run 7
+    - name: Test Run 7
       script:
         - echo "Test Run 7 - Block Exclude Pages, Content Moderation NotificationsElasticsearch Connector Autocomplete, Media Bulk Upload, Menu Item Extras, Twitter Block, Views Infinite Scroll"
         - ./scripts/test7.sh
-    - name: COBB Test Run 8
+    - name: Test Run 8
       script:
         - echo "Test Run 8 - Add To Any, Date Recur Interactive, Menu Trail buy Path, Optional dend DAte, Permissions Filters, S3FS, Scheduler Content Moderation Integration, Selective Bettere Exposed Filters, Siteimprove, Twig Field Value, Views Taxonomy Term Name Depth"
         - ./scripts/test8.sh
@@ -53,10 +53,11 @@ jobs:
       script:
         - echo "Test Run 7&8 Fails - Better Social Sharing Buttons, DropzoneJS, Entity Update, Geofield, Media Entity Actions, Quick Node Clone, Sitemap, S3FS Cors, User Default Page"
         - ./scripts/testsfail7.sh
+    - name: "Test Run 9"
       script:
         - echo "Test Run 9 - Administer Users By Role, Anchor Link, Autocomplete Deluxe, Background Image Formatter, Context Active Trail, Media Entity Audio, Media Entity Browser, Menu Admin Per Menu, Role Delegation, Share Everywhere, Tab Toolbar, Taxonomy Access Fix, Text with Title"
         - ./scripts/test9.sh
-    - name: DENV Test Run 10
+    - name: Test Run 10
       script:
         - echo "Test Run 10 - Entity Pager, Entity Reference Tab Formatter, JuiceBox, Leaflet, Masonry, Max Length, Search Exclude, Search Exclude NID, ShareThis, SimpleSAML PHP Auth, Slack"
         - ./scripts/test10.sh
@@ -64,40 +65,39 @@ jobs:
       script:
         - echo "Test Run 9&10 Fails - Default Content, Field Block, FontAwesome icon Picker, FontAwesome Menu Icons, FontYourFace, Path Redirect Import, Responsive Favicons, Select2, SVG Image, Toolbar Menu, Views Bulk Operations"
         - ./scripts/testsfail9.sh
-    - name: MCPL Test Run 11
+    - name: Test Run 11
       script:
         - echo "Test Run 11 - Contribute, Crazyegg, Google Tag Manager, Honeypot, Image Style Quality, Role Assign, Simple GMap, Smart IP, Views Contextual Filter Or"
         - ./scripts/test11.sh
-    - name: SCVW Test Run 12
+    - name: Test Run 12
       script:
         - echo "Test Run 12 - Facebook Pixel, Video Embed Facebook"
         - ./scripts/test12.sh
-
-    - name: STDL Test Run 13
+    - name: Test Run 13
       script:
         - echo "Test Run 13 - Draggable Views"
         - ./scripts/test13.sh
-    - name: TCCL Test Run 14
+    - name: Test Run 14
       script:
         - echo "Test Run 14 - Address Map Link, Communico"
         - ./scripts/test14.sh
-    - name: PWSA Test Run 15
+    - name: Test Run 15
       script:
         - echo "Test Run 15 - Blacklist, Crop, Focal Point, Layout Builder Restrictions"
         - ./scripts/test15.sh
-    - name: NORMOK Test Run 16
+    - name: Test Run 16
       script:
         - echo "Test Run 16 - Flood Unblock, Key Value Field"
         - ./scripts/test16.sh
-    - name: CDPU-WPC Test Run 17
+    - name: Test Run 17
       script:
         - echo "Test Run 17 - Layout Builder Modal, Layout Builder Styles, Views TimelineJS"
         - ./scripts/test17.sh
-    - name: CDPU-CPP Test Run 18
+    - name: Test Run 18
       script:
         - echo "Test Run 18 - Block Class, CKEditor Table Tools Toolbar, CKEditor Video Detector, Display Suite, Easy Install"
         - ./scripts/test18.sh
-    - name: Test Run 11-18 Fail
+    - name: 11-18 Fail
       script:
         - echo "Test Run 11 - 18 Fail - Comment Notify, Config Devel, Protocol Relative URLs, Views Lazy Load, HTI, Protected Pages, Structure Sync, CKCodeEditor, Menu Position, Authorization, Force Password Change, Migrate File, Single DateTime, Drupal Slider, Display Suite, Embedded Google Doc Viewer, Panels, ViewerJS"
         - ./scripts/test18.sh
