@@ -47,7 +47,7 @@ jobs:
         - ./scripts/test7.sh
     - name: Test Run 8
       script:
-        - echo "Test Run 8 - Add To Any, Date Recur Interactive, Menu Trail buy Path, Optional dend DAte, Permissions Filters, S3FS, Scheduler Content Moderation Integration, Selective Bettere Exposed Filters, Siteimprove, Twig Field Value, Views Taxonomy Term Name Depth"
+        - echo "Test Run 8 - Add To Any, Date Recur Interactive, Menu Trail buy Path, Optional End Date, Permissions Filters, S3FS, Scheduler Content Moderation Integration, Selective Better Exposed Filters, Siteimprove, Twig Field Value, Views Taxonomy Term Name Depth"
         - ./scripts/test8.sh
     - name: Test Run 7&8 Fails
       script:
@@ -63,7 +63,7 @@ jobs:
         - ./scripts/test10.sh
     - name: Test Run 9&10 Fails
       script:
-        - echo "Test Run 9&10 Fails - Default Content, Field Block, FontAwesome icon Picker, FontAwesome Menu Icons, FontYourFace, Path Redirect Import, Responsive Favicons, Select2, SVG Image, Toolbar Menu, Views Bulk Operations"
+        - echo "Test Run 9&10 Fails - Default Content, Field Block, FontAwesome Icon Picker, FontAwesome Menu Icons, FontYourFace, Path Redirect Import, Responsive Favicons, Select2, SVG Image, Toolbar Menu, Views Bulk Operations"
         - ./scripts/testsfail9.sh
     - name: Test Run 11
       script:
