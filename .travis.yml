@@ -144,7 +144,7 @@ before_script:
   - if [ -n "$GITHUB_COMPOSER_TOKEN" ]; then composer config github-oauth.github.com ${GITHUB_COMPOSER_TOKEN}; fi;
   # Configures composer to discard changes when "recloning" a submodule repository, usually happens when applying patches
   - composer config discard-changes true
-  composer install
+  - composer install
   - curl https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php -o ./docroot/sites/default/default.settings.php
   - docker-compose up -d --build
   - docker-compose ps
