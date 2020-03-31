@@ -21,6 +21,10 @@ jobs:
       script:
         - echo "Test Run 3 - PathAuto, Purge Queuer URL, Simple Sitemap, Site Alert, SMTP, Social Media Links, Token, Varnish Purge"
         - ./scripts/test3.sh
+    - name: Test Run 4
+      script:
+        - echo "Test Run 4 - PathAuto, Purge Queuer URL, Simple Sitemap, Site Alert, SMTP, Social Media Links, Token, Varnish Purge"
+        - ./scripts/test4.sh
     - name: Test Run 5
       script:
         - echo "Test Run 5 - CSV Serialization, External Authentication, Full Calendar View, Migrate Source CSV, Migrate Tools, Office Hours, Views Autocomplete Filters, Views Data Export"
@@ -52,7 +56,7 @@ jobs:
     - name: 11-18 Fail
       script:
         - echo "Test Run 11 - 18 Fail - Comment Notify, Config Devel, Protocol Relative URLs, Views Lazy Load, HTI, Protected Pages, Structure Sync, CKCodeEditor, Menu Position, Authorization, Force Password Change, Migrate File, Single DateTime, Drupal Slider, Display Suite, Embedded Google Doc Viewer, Panels, ViewerJS"
-        - ./scripts/test18.sh
+        - ./scripts/testsfail11.sh
 services:
   - docker
 
