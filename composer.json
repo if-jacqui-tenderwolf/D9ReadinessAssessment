@@ -476,6 +476,9 @@
             "drupal/media_bulk_upload": {
                 "Drupal 9 compatibility": "https://www.drupal.org/files/issues/2019-10-31/drupal-9-compatibility-3091351-2.patch"
             },
+            "drupal/media_entity_image": {
+                "Call to undefined function media_entity_copy_icons() in media_entity_image/media_entity_image.install": "https://www.drupal.org/files/issues/2936985-2.patch"
+            },
             "drupal/menu_admin_per_menu": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-24/drupal_9_deprecated_code-3042751-2.patch"
             },
