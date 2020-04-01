@@ -382,6 +382,9 @@
             "drupal/captcha": {
                 "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
             },
+            "drupal/ckeditor_codemirror": {
+                "D9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-04-01/3123960-2.patch"
+            },
             "drupal/cloudflare": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-22/drupal_9_deprecated_code-3042953-4.patch",
                 "Cloudflarepurge: Allow for altering targets before purging": "https://www.drupal.org/files/issues/2019-04-01/3044887-n2.patch"
