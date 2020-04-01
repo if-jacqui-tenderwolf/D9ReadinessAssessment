@@ -419,9 +419,6 @@
             "drupal/editor_file": {
                 "Drupal 9 Readiness": "https://www.drupal.org/files/issues/2020-01-30/3110068-2.patch"
             },
-            "drupal/entity_clone": {
-                "keep this module code up to date and preparing for Drupal 9": "https://www.drupal.org/files/issues/2019-05-14/entity_clone-3032476-4.patch"
-            },
             "drupal/environment_indicator": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042790-14_0.patch"
             },
@@ -438,7 +435,7 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-25/3096554-2.patch"
             },
             "drupal/google_analytics": {
-                "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-01-03/3072207-26.patch"
+                "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-04-01/3072207-39.patch"
             },
             "drupal/geofield": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-20/3121125-2.patch"
