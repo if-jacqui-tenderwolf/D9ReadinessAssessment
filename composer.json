@@ -86,6 +86,7 @@
         "drupal/extlink": "1.x-dev",
         "drupal/facebook_pixel": "1.x-dev",
         "drupal/facets": "1.x-dev",
+        "drupal/feeds": "3.x-dev",
         "drupal/field_group": "^3.0",
         "drupal/fieldblock": "2.x-dev",
         "drupal/file_entity": "2.x-dev",
@@ -493,7 +494,7 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-17/3119021-4.patch"
             },
             "drupal/plupload": {
-                "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2019-11-12/deprecated-3093844-2.patch"
+                "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2020-04-02/3093844-3.patch"
             },
             "drupal/protected_pages": {
                 "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-01-25/Drupal_9_compatibility-3108123-4.patch"
