@@ -56,9 +56,9 @@ set -e -o pipefail
 
 # GeoLocation
 set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en geolocation -y" && \
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en feeds geolocation -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/geolocation" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall geolocation -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall geolocation feeds -y"
 set -e -o pipefail
 
 # Libraries API -- failing scan, will be deprecated for D9 and included in Core.
