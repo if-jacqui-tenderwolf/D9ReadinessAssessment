@@ -395,7 +395,7 @@
                 "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-14/deprecated-3094340-2.patch"
             },
             "drupal/config_filter": {
-                "ActiveMigrateStorage class fails to load in config_filter_split_test":"https://www.drupal.org/files/issues/2020-04-02/3124329-2.patch"
+                "Fix test issues for 2.x version of module":"https://www.drupal.org/files/issues/2020-04-03/3124767-2.patch"
             },
             "drupal/config_split": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2019-12-12/3042682-15-deprecated-code-report.patch"
