@@ -430,6 +430,9 @@
             "drupal/fieldblock": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-10-12/fieldblock-deprecated_code-3087563-2-8x_2x_dev.patch"
             },
+            "drupal/fontawesome_menu_icons": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-04-04/fontawesome_menu_icons-d9-deprecation-3125003-2.patch"
+            },
             "drupal/force_password_change": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-25/3096554-2.patch"
             },
