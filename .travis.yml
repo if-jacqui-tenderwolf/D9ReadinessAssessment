@@ -9,46 +9,108 @@ php:
 
 jobs:
   include:
-    - name: Test Run 1
+    - name: Test Run 8.8 1
       script:
         - echo "Test Run 1"
         - ./scripts/test1.sh
-    - name: Test Run 2
+    - name: Test Run 8.8 2
       script:
         - echo "Test Run 2"
         - ./scripts/test2.sh
     - name: Test Run 3
       script:
-        - echo "Test Run 3"
+        - echo "Test Run 8.8 3"
         - ./scripts/test3.sh
     - name: Test Run 4
       script:
-        - echo "Test Run 4"
+        - echo "Test Run 8.8 4"
         - ./scripts/test4.sh
     - name: Test Run 5
       script:
-        - echo "Test Run 5"
+        - echo "Test Run 8.8 5"
         - ./scripts/test5.sh
     - name: Test Run 1&2 Fails
       script:
-        - echo "Test Run 1&2 Fails"
+        - echo "Test Run 8.8 1 Fails"
         - ./scripts/testsfail1.sh
     - name: TestRun 3&4 Fails
       script:
-        - echo "Test Run 3&4 Fails"
+        - echo "Test Run 8.8 3 Fails"
         - ./scripts/testsfail3.sh
     - name: TestRun 5&6 Fails
       script:
-        - echo "Test Run 5&6 Fails"
+        - echo "Test Run 8.8 5 Fails"
         - ./scripts/testsfail5.sh
     - name: Test Run 7&8 Fails
       script:
-        - echo "Test Run 7&8 Fails"
+        - echo "Test Run 8.8 7 Fails"
         - ./scripts/testsfail7.sh
     - name: Test Run 9&10 Fails
       script:
-        - echo "Test Run 9&10 Fails"
+        - echo "Test Run 8.8 9 Fails"
         - ./scripts/testsfail9.sh
+################### Drupal 8.9 testing
+    - name: Test Run 8.9 1
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 1"
+        - ./scripts/test1.sh
+    - name: Test Run 8.9 2
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 2"
+        - ./scripts/test2.sh
+    - name: Test Run 3
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 3"
+        - ./scripts/test3.sh
+    - name: Test Run 4
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 4"
+        - ./scripts/test4.sh
+    - name: Test Run 5
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 5"
+        - ./scripts/test5.sh
+    - name: Test Run 1&2 Fails
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 1 Fails"
+        - ./scripts/testsfail1.sh
+    - name: TestRun 3&4 Fails
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 3 Fails"
+        - ./scripts/testsfail3.sh
+    - name: TestRun 5&6 Fails
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 5 Fails"
+        - ./scripts/testsfail5.sh
+    - name: Test Run 7&8 Fails
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 7 Fails"
+        - ./scripts/testsfail7.sh
+    - name: Test Run 9&10 Fails
+      install:
+        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+      script:
+        - echo "Test Run 8.9 9 Fails"
+        - ./scripts/testsfail9.sh
+
 services:
   - docker
 
@@ -86,9 +148,7 @@ before_install:
   - export PATH=~/bin:$PATH
   - mkdir -p ~/shared
   - docker-compose pull
-
-before_script:
-  # initial composer build process
+# initial composer build process
   - if [ -n "$GITHUB_COMPOSER_TOKEN" ]; then composer config github-oauth.github.com ${GITHUB_COMPOSER_TOKEN}; fi;
   # Configures composer to discard changes when "recloning" a submodule repository, usually happens when applying patches
   - composer config discard-changes true
@@ -99,6 +159,9 @@ before_script:
   - sudo chmod a+w docroot/sites/default/files
   - sleep 15
   - chmod 0777 ./docroot/sites/default/settings.php
+install:
+  - echo "Global Intall job step"
+before_script:
   - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush site:install --db-url=mysql://drupal:drupal@db/drupal --account-name='admin' --account-pass='admin' --account-mail='ifdrupaladmin@ifsight.net' --site-name='Tabula Rasa 8' --site-mail='ifdrupaladmin@ifsight.net' -y"
   # Copying our specific settings.php over the one created by drush site:install so that our settings.local.php file gets loaded when site is bootstrapped
   - chmod 0777 ./docroot/sites/default/settings.php
