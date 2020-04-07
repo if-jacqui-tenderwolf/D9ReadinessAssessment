@@ -9,48 +9,113 @@ php:
 
 jobs:
   include:
-    - name: Test Run 1
+    - name: Test Run 8.8.1
+      before_script:
+        - echo "Before script Test run 8.8.1"
       script:
         - echo "Test Run 1"
-        - ./scripts/test1.sh
-    - name: Test Run 2
+    - name: Test Run 8.8.2
       script:
         - echo "Test Run 2"
-        - ./scripts/test2.sh
-    - name: Test Run 3
+    - name: Test Run 8.8.3
       script:
         - echo "Test Run 3"
-        - ./scripts/test3.sh
-    - name: Test Run 4
-      script:
-        - echo "Test Run 4"
-        - ./scripts/test4.sh
-    - name: Test Run 5
-      script:
-        - echo "Test Run 5"
-        - ./scripts/test5.sh
-    - name: Test Run 1&2 Fails
-      script:
-        - echo "Test Run 1&2 Fails"
-        - ./scripts/testsfail1.sh
-    - name: TestRun 3&4 Fails
-      script:
-        - echo "Test Run 3&4 Fails"
-        - ./scripts/testsfail3.sh
-    - name: TestRun 5&6 Fails
-      script:
-        - echo "Test Run 5&6 Fails"
-        - ./scripts/testsfail5.sh
-    - name: Test Run 7&8 Fails
-      script:
-        - echo "Test Run 7&8 Fails"
-        - ./scripts/testsfail7.sh
-    - name: Test Run 9&10 Fails
-      script:
-        - echo "Test Run 9&10 Fails"
-        - ./scripts/testsfail9.sh
-services:
-  - docker
+################################# Build on Drupal 8.9 ##################################
+#    - name: Test Run 8.9.1
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 1"
+#        - ./scripts/test1.sh
+#    - name: Test Run 8.9.2
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 2"
+#        - ./scripts/test2.sh
+#    - name: Test Run 8.9.3
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 3"
+#        - ./scripts/test3.sh
+#    - name: Test Run 8.9.4
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 4"
+#        - ./scripts/test4.sh
+#    - name: Test Run 8.9.5
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 5"
+#        - ./scripts/test5.sh
+#    - name: Test Run 8.9.1&2 Fails
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 1&2 Fails"
+#        - ./scripts/testsfail1.sh
+#    - name: TestRun 8.9.3&4 Fails
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 3&4 Fails"
+#        - ./scripts/testsfail3.sh
+#    - name: TestRun 8.9.5&6 Fails
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 5&6 Fails"
+#        - ./scripts/testsfail5.sh
+#    - name: Test Run 8.9.7&8 Fails
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 7&8 Fails"
+#        - ./scripts/testsfail7.sh
+#    - name: Test Run 8.9.9&10 Fails
+#      script:
+#        - composer require drupal/core-composer-scaffold:^8.9 drupal/core-project-message:^8.9 drupal/core-recommended:^8.9 drupal/core-dev:^8.9 drupal/core:^8.9
+#        - echo "Test Run 9&10 Fails"
+#        - ./scripts/testsfail9.sh
+
+################################# Build on Drupal 9.0 ##################################
+## composer remove drupal/context_active_trail drupal/context
+## composer require drupal/core-composer-scaffold:^9.0 drupal/core-project-message:^9.0 drupal/core-recommended:^9.0 drupal/core-dev:^9.0 drupal/core:^9.0 composer/installers:^1.8 typo3/phar-stream-wrapper:^3.1.4
+## docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush status-report --filter='title=Drupal' --field=Summary"
+#    - name: Test Run 9.0.1
+#      script:
+#        - echo "Test Run 1"
+#        - ./scripts/test1.sh
+#    - name: Test Run 9.0.2
+#      script:
+#        - echo "Test Run 2"
+#        - ./scripts/test2.sh
+#    - name: Test Run 9.0.3
+#      script:
+#        - echo "Test Run 3"
+#        - ./scripts/test3.sh
+#    - name: Test Run 9.0.4
+#      script:
+#        - echo "Test Run 4"
+#        - ./scripts/test4.sh
+#    - name: Test Run 9.0.5
+#      script:
+#        - echo "Test Run 5"
+#        - ./scripts/test5.sh
+#    - name: Test Run 9.0.1&2 Fails
+#      script:
+#        - echo "Test Run 1&2 Fails"
+#        - ./scripts/testsfail1.sh
+#    - name: TestRun 9.0.3&4 Fails
+#      script:
+#        - echo "Test Run 3&4 Fails"
+#        - ./scripts/testsfail3.sh
+#    - name: TestRun 9.0.5&6 Fails
+#      script:
+#        - echo "Test Run 5&6 Fails"
+#        - ./scripts/testsfail5.sh
+#    - name: Test Run 9.0.7&8 Fails
+#      script:
+#        - echo "Test Run 7&8 Fails"
+#        - ./scripts/testsfail7.sh
+#    - name: Test Run 9.0.9&10 Fails
+#      script:
+#        - echo "Test Run 9&10 Fails"
+#        - ./scripts/testsfail9.sh
 
 addons:
   hosts:
@@ -73,40 +138,8 @@ notifications:
   on_failure: always
 
 before_install:
-  - export PATH=$PATH:$HOME/.local/bin
-  - sudo apt-get -qq update
-  - sudo apt-get install -y pv
-  # Removing AWS CLI install for now, may need later
-  #- curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-  #- unzip awscli-bundle.zip
-  #- ./awscli-bundle/install -b ~/bin/aws
-  #- rm -Rf awscli-bundle.zip
-  #- rm -Rf awscli-bundle
-  # Adding bin path to global path to support post-composer build process and finding binaries for testing purposes
-  - export PATH=~/bin:$PATH
-  - mkdir -p ~/shared
-  - docker-compose pull
-
+  - echo "Global before install"
+install:
+  - echo "Global Install"
 before_script:
-  # initial composer build process
-  - if [ -n "$GITHUB_COMPOSER_TOKEN" ]; then composer config github-oauth.github.com ${GITHUB_COMPOSER_TOKEN}; fi;
-  # Configures composer to discard changes when "recloning" a submodule repository, usually happens when applying patches
-  - composer config discard-changes true
-  - composer install
-  - curl https://git.drupalcode.org/project/drupal/-/raw/8.8.x/sites/default/default.settings.php -o ./docroot/sites/default/default.settings.php
-  - docker-compose up -d --build
-  - docker-compose ps
-  - sudo chmod a+w docroot/sites/default/files
-  - sleep 15
-  - chmod 0777 ./docroot/sites/default/settings.php
-  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush site:install --db-url=mysql://drupal:drupal@db/drupal --account-name='admin' --account-pass='admin' --account-mail='ifdrupaladmin@ifsight.net' --site-name='Tabula Rasa 8' --site-mail='ifdrupaladmin@ifsight.net' -y"
-  # Copying our specific settings.php over the one created by drush site:install so that our settings.local.php file gets loaded when site is bootstrapped
-  - chmod 0777 ./docroot/sites/default/settings.php
-  - cp ./drupal/settings.php ./docroot/sites/default/settings.php
-  - chmod 0644 ./docroot/sites/default/settings.php
-  - chmod 0777 ./docroot/sites/default/settings.local.php
-  - cp ./drupal/settings.travis.php ./docroot/sites/default/settings.local.php
-  # Second compoesr install to re-install modules removed due to patching during installation of "require-dev" modules
-  - composer install
-  # Run a cache reset on the drupal install
-  - docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush cr"
+  - echo "Global Before Script"

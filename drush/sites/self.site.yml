@@ -1,4 +1,0 @@
-local:
-  host: drupal.local
-  root: /var/www/html/docroot
-  uri: https://drupal.local
