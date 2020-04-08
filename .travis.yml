@@ -9,46 +9,6 @@ php:
 
 jobs:
   include:
-    - name: Test Run 8.8 1
-      script:
-        - echo "Test Run 1"
-        - ./scripts/test1.sh
-    - name: Test Run 8.8 2
-      script:
-        - echo "Test Run 2"
-        - ./scripts/test2.sh
-    - name: Test Run 8.8 3
-      script:
-        - echo "Test Run 8.8 3"
-        - ./scripts/test3.sh
-    - name: Test Run 8.8 4
-      script:
-        - echo "Test Run 8.8 4"
-        - ./scripts/test4.sh
-    - name: Test Run 8.8 5
-      script:
-        - echo "Test Run 8.8 5"
-        - ./scripts/test5.sh
-    - name: Test Run 8.8 1 Fails
-      script:
-        - echo "Test Run 8.8 1 Fails"
-        - ./scripts/testsfail1.sh
-    - name: Test Run 8.8 3 Fails
-      script:
-        - echo "Test Run 8.8 3 Fails"
-        - ./scripts/testsfail3.sh
-    - name: Test Run 8.8 5 Fails
-      script:
-        - echo "Test Run 8.8 5 Fails"
-        - ./scripts/testsfail5.sh
-    - name: Test Run 8.8 7 Fails
-      script:
-        - echo "Test Run 8.8 7 Fails"
-        - ./scripts/testsfail7.sh
-    - name: Test Run 8.8 9 Fails
-      script:
-        - echo "Test Run 8.8 9 Fails"
-        - ./scripts/testsfail9.sh
 ################### Drupal 8.9 testing
     - name: Test Run 8.9 1
       install:
