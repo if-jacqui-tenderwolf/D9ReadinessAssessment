@@ -515,6 +515,9 @@
             "drupal/sharethis": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
             },
+            "drupal/social_media_links": {
+                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-05-22/social-media-links-3042710-2.patch"
+            },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
             },
