@@ -431,9 +431,6 @@
             "drupal/google_analytics": {
                 "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-04-01/3072207-39.patch"
             },
-            "drupal/geofield": {
-                "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-20/3121125-2.patch"
-            },
             "drupal/group": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-11/updated-3042771-8.patch"
             },
@@ -458,7 +455,6 @@
                 "Update Dependencies Format in .info.yml":"https://www.drupal.org/files/issues/2019-02-21/dependencies-3034756-2.patch"
             },
             "drupal/linkit": {
-                "Drupal 9 Deprecated Code Report for LinkIt module":"https://www.drupal.org/files/issues/2020-01-28/linkit-d9-3042631-11.patch",
                 "Linkit for Link field":"https://www.drupal.org/files/issues/2020-02-28/linkit_for_link_field-2712951-154.patch"
             },
             "drupal/masonry": {
@@ -521,9 +517,6 @@
             },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
-            },
-            "drupal/siteimprove": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/siteimprove-3074378-1.patch"
             },
             "drupal/sitemap": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-11/3042676-sitemap-deprecated-code-20_0.patch"
