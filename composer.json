@@ -45,9 +45,9 @@
         "drupal/context": "4.x-dev",
         "drupal/context_active_trail": "1.x-dev",
         "drupal/contribute": "1.x-dev",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8",
+        "drupal/core-composer-scaffold": "^8.9@beta",
+        "drupal/core-project-message": "^8.9@beta",
+        "drupal/core-recommended": "^8.9@beta",
         "drupal/courier": "1.x-dev",
         "drupal/crazyegg": "1.x-dev",
         "drupal/crop": "2.x-dev",
@@ -230,7 +230,7 @@
     },
     "require-dev": {
         "behat/mink-selenium2-driver": "1.4.x-dev as 1.3.x-dev",
-        "drupal/core-dev": "^8.8",
+        "drupal/core-dev": "^8.9@beta",
         "drupal/devel": "^2.0",
         "drupal/drupal-extension": "^4.0@beta",
         "genesis/behat-fail-aid": "^2.1",
@@ -367,9 +367,6 @@
             "drupal/block_class": {
                 "Drupal 9 compatibility":"https://www.drupal.org/files/issues/2020-01-29/3109188-4.patch"
             },
-            "drupal/block_field": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-18/3042702-10.patch"
-            },
             "drupal/captcha": {
                 "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
             },
@@ -443,9 +440,6 @@
             "drupal/juicebox": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-05/updated-3042821-4.patch"
             },
-            "drupal/key_value_field": {
-                "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-03-03/compatibilty-3116509-3.patch"
-            },
             "drupal/libraries":{
                 "Coding Standards": "https://www.drupal.org/files/issues/2019-08-15/3075081-coding-standard_0.patch",
                 "Fix subclassing and stop overriding constructors in libraries\\Plugin\\libraries\\Type\\PhpFileLibraryType":"https://www.drupal.org/files/issues/2020-02-13/libraries-Fix_subclassing_and_stop_overriding_constructors_in_libraries_Plugin_libraries_Type_PhpFileLibraryType-3113477-2-D8.patch",
@@ -499,9 +493,6 @@
             },
             "drupal/responsive_favicons": {
                 "D9 deprecation report": "https://www.drupal.org/files/issues/2019-11-21/d9-deprecation-fix-3094678-09.patch"
-            },
-            "drupal/search_api": {
-                "Test for compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-24/3023170-56--prepare_for_drupal_9.patch"
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
