@@ -361,8 +361,7 @@
                 "D9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-29/3004280-12.patch"
             },
             "drupal/better_exposed_filters": {
-                "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch",
-                "Drupal 9 compatibility - fix namespacing on tests": "https://www.drupal.org/files/issues/2020-03-28/3123071-2.patch"
+                "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
             },
             "drupal/block_class": {
                 "Drupal 9 compatibility":"https://www.drupal.org/files/issues/2020-01-29/3109188-4.patch"
@@ -394,9 +393,6 @@
             },
             "drupal/draggableviews": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-03/draggableviews-3051083-7.patch"
-            },
-            "drupal/easy_breadcrumb": {
-                "Drupal 9 Deprecated Code": "https://www.drupal.org/files/issues/2020-02-11/replace_method-3102112-4.patch"
             },
             "drupal/easy_install": {
                 "Compatibility with Drupal 9":"https://www.drupal.org/files/issues/2020-03-16/3120071-2.patch",
@@ -472,9 +468,6 @@
             "drupal/plupload": {
                 "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2020-04-02/3093844-3.patch"
             },
-            "drupal/protected_pages": {
-                "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-01-25/Drupal_9_compatibility-3108123-4.patch"
-            },
             "drupal/purge": {
                 "Replace deprecated function drupal_set_message(). (D9)": "https://www.drupal.org/files/issues/2019-10-11/1-purge-drupal9-replace-drupalsetmessage.patch",
                 "Replace deprecated method aliasManager() of class Drush\\Drush. (D9)": "https://www.drupal.org/files/issues/2019-10-12/1-purge-drupal9-replace-aliasmanager.patch"
@@ -496,9 +489,6 @@
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
-            },
-            "drupal/select2": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-10-11/1-select2-drupal9-compatibility.patch"
             },
             "drupal/share_everywhere": {
                 "Drupal 9 Deprecated Status": "https://www.drupal.org/files/issues/2020-01-25/3108784-path-manager.patch"
@@ -531,9 +521,6 @@
             },
             "drupal/text_resize": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-09/text_resize-3073768-1.patch"
-            },
-            "drupal/toolbar_menu": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-29/3072454-7.patch"
             },
             "drupal/twitter_block": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-11/3042776-8.patch"
