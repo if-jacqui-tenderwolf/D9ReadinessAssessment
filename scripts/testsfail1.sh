@@ -96,13 +96,6 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall gdoc_field -y"
 set -e -o pipefail
 
-# Entity Clone
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en entity_clone -y"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/entity_clone"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall entity_clone -y"
-set -e -o pipefail
-
 # Entity Embed -- currently fails scan
 set +e
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en entity_embed -y" && \
