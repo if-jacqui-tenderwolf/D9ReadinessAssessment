@@ -60,8 +60,8 @@
         "drupal/diff": "^1.0",
         "drupal/dropzonejs": "2.x-dev",
         "drupal/drupal_slider": "1.x-dev",
-        "drupal/dynamic_entity_reference": "1.x-dev",
         "drupal/ds": "3.x-dev",
+        "drupal/dynamic_entity_reference": "1.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/easy_install": "10.x-dev",
         "drupal/editor_advanced_link": "^1.6",
@@ -345,6 +345,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/advagg": {
+                "Drupal 9 Compatibility fix": "https://www.drupal.org/files/issues/2020-04-30/3132286-4.patch"
+            },
             "drupal/auditfiles": {
                 "Hook help is missing": "https://www.drupal.org/files/issues/2020-03-29/2991570-7.patch",
                 "\\Drupal::config() calls should be avoided in classes use dependency injection": "https://www.drupal.org/files/issues/2018-08-28/config_dependency_2995456-2.patch",
@@ -449,9 +452,6 @@
             },
             "drupal/module_missing_message_fixer": {
                 "Remove Drush 8 Support": "https://www.drupal.org/files/issues/2019-06-27/3064592-3-remove-drush-8-support.patch"
-            },
-            "drupal/page_manager": {
-                "Fix namespace of PageManagerLayoutBuilderStorage class": "https://www.drupal.org/files/issues/2020-04-26/page_manager-3131106-2.patch"
             },
             "drupal/plupload": {
                 "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2020-04-02/3093844-3.patch"
