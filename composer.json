@@ -74,6 +74,7 @@
         "drupal/entity_clone": "1.x-dev",
         "drupal/entity_embed": "1.x-dev",
         "drupal/entity_pager": "1.x-dev",
+        "drupal/entity_print": "^2.1",
         "drupal/entity_ref_tab_formatter": "1.x-dev",
         "drupal/entity_reference_revisions": "1.x-dev",
         "drupal/entity_reference_views_select": "1.x-dev",
