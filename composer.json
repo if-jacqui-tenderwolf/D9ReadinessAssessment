@@ -362,9 +362,6 @@
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
             },
-            "drupal/block_class": {
-                "Drupal 9 compatibility":"https://www.drupal.org/files/issues/2020-01-29/3109188-4.patch"
-            },
             "drupal/captcha": {
                 "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
             },
@@ -397,9 +394,6 @@
                 "Filters breaking score if no query string": "https://www.drupal.org/files/issues/2019-10-15/3087971-filters-breaking-score.patch",
                 "Search API + Elastic connector + VBO error performing action":"https://www.drupal.org/files/issues/2019-09-04/3050133-vbo-fix.patch",
                 "Support different types of queries \"match\" and \"terms\"": "https://www.drupal.org/files/issues/2019-08-05/elasticsearch_connector-3072719-different-query-types-2.patch"
-            },
-            "drupal/editor_file": {
-                "Drupal 9 Readiness": "https://www.drupal.org/files/issues/2020-01-30/3110068-2.patch"
             },
             "drupal/environment_indicator": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042790-14_0.patch"
@@ -496,11 +490,6 @@
             },  
             "drupal/seckit": {
                 "Drupal 9 compatibility related issues for Security Kit module": "https://www.drupal.org/files/issues/2020-02-12/3074080-23.patch"
-            },
-            "drupal/smtp": {
-                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-02-20/drupal-9-deprecated-code-report-3042630-24.patch",
-                "Drupal 9 Compatibility - fix key in .info.yml": "https://www.drupal.org/files/issues/2020-01-27/3109130-3.patch",
-                "SMTPMailSystem: use EmailValidatorInterface": "https://www.drupal.org/files/issues/2020-02-19/3114689-emailvalidatorinterface.patch"
             },
             "drupal/svg_image": {
                 "Replace drupal_set_message() with messenger Service":"https://www.drupal.org/files/issues/2020-04-02/3122816-3.patch"
