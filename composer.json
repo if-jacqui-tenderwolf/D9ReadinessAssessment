@@ -484,10 +484,7 @@
             },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
-            },
-            "drupal/sitemap": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-11/3042676-sitemap-deprecated-code-20_0.patch"
-            },  
+            }, 
             "drupal/seckit": {
                 "Drupal 9 compatibility related issues for Security Kit module": "https://www.drupal.org/files/issues/2020-02-12/3074080-23.patch"
             },
