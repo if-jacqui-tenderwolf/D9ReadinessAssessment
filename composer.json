@@ -371,9 +371,6 @@
             "drupal/cloudflare": {
                 "Cloudflarepurge: Allow for altering targets before purging": "https://www.drupal.org/files/issues/2019-04-01/3044887-n2.patch"
             },
-            "drupal/components": {
-                "Drupal 9 Deprecated Code Report for Components module": "https://www.drupal.org/files/issues/2020-03-13/components-twig-3112929-5.patch"
-            },
             "drupal/config_devel": {
                 "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-14/deprecated-3094340-2.patch"
             },
@@ -381,14 +378,10 @@
                 "Fix test issues for 2.x version of module":"https://www.drupal.org/files/issues/2020-04-03/3124767-2.patch"
             },
             "drupal/context": {
-                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-03-27/3042764-6.patch"
+                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-05-25/remove_deprecated_code-3042764-11.patch"
             },
             "drupal/draggableviews": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-03/draggableviews-3051083-7.patch"
-            },
-            "drupal/easy_install": {
-                "Compatibility with Drupal 9":"https://www.drupal.org/files/issues/2020-03-16/3120071-2.patch",
-                "Call to deprecated function file_scan_directory()":"https://www.drupal.org/files/issues/2020-03-16/3120075-2.patch"
             },
             "drupal/elasticsearch_connector": {
                 "Filters breaking score if no query string": "https://www.drupal.org/files/issues/2019-10-15/3087971-filters-breaking-score.patch",
@@ -456,19 +449,13 @@
                 "Replace deprecated method aliasManager() of class Drush\\Drush. (D9)": "https://www.drupal.org/files/issues/2019-10-12/1-purge-drupal9-replace-aliasmanager.patch"
             },
             "drupal/purge_queuer_url": {
-                "Logged-in requests remove items from traffic registry":"https://www.drupal.org/files/issues/2018-05-29/purge_queuer_url-2912139-7-skip-logged-in.patch",
-                "Command 'drush sql-sanitize' errors on uninstalled module": "https://www.drupal.org/files/issues/2950814-drush-sanitize-service-check.patch",
-                "Add Blacklisting of Cache Tags": "https://www.drupal.org/files/issues/2018-10-15/purge_queuer_url-2890476-8.patch",
-                "Deprecation issues": "https://www.drupal.org/files/issues/2019-11-15/purge_queuer_url-3094771-2.patch"
+                "Logged-in requests remove items from traffic registry":"https://www.drupal.org/files/issues/2018-05-29/purge_queuer_url-2912139-7-skip-logged-in.patch"
             },  
             "drupal/queue_ui": {
                 "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-02-04/3097065-11-drupal-9-compatibility.patch"
             },
             "drupal/quick_node_clone": {
                 "Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-20/3076998-20.patch"
-            },
-            "drupal/responsive_favicons": {
-                "D9 deprecation report": "https://www.drupal.org/files/issues/2019-11-21/d9-deprecation-fix-3094678-09.patch"
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
