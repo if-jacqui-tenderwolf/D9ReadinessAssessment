@@ -346,9 +346,6 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/advagg": {
-                "Drupal 9 Compatibility fix": "https://www.drupal.org/files/issues/2020-04-30/3132286-4.patch"
-            },
             "drupal/auditfiles": {
                 "Hook help is missing": "https://www.drupal.org/files/issues/2020-03-29/2991570-7.patch",
                 "\\Drupal::config() calls should be avoided in classes use dependency injection": "https://www.drupal.org/files/issues/2018-08-28/config_dependency_2995456-2.patch",
@@ -362,9 +359,6 @@
             "drupal/better_exposed_filters": {
                 "Support \"preserve URL Query Parameters\"":"https://www.drupal.org/files/issues/2020-02-27/3116411-2.patch"
             },
-            "drupal/captcha": {
-                "Prepare the module for Drupal 9": "https://www.drupal.org/files/issues/2020-03-22/3102288-32.patch"
-            },
             "drupal/ckeditor_codemirror": {
                 "D9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-04-01/3123960-2.patch"
             },
@@ -376,9 +370,6 @@
             },
             "drupal/config_filter": {
                 "Fix test issues for 2.x version of module":"https://www.drupal.org/files/issues/2020-04-03/3124767-2.patch"
-            },
-            "drupal/context": {
-                "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-05-25/remove_deprecated_code-3042764-11.patch"
             },
             "drupal/draggableviews": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-01-03/draggableviews-3051083-7.patch"
@@ -402,9 +393,6 @@
             },
             "drupal/force_password_change": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-25/3096554-2.patch"
-            },
-            "drupal/google_analytics": {
-                "Drupal 9 compatibility related issues should be fixed.": "https://www.drupal.org/files/issues/2020-04-01/3072207-39.patch"
             },
             "drupal/hti": {
                 "Replace drupal_set_message() with messenger Service and drupal 9 compatability": "https://www.drupal.org/files/issues/2020-03-20/3121085-2.patch"
@@ -435,20 +423,13 @@
             "drupal/media_entity_image": {
                 "Call to undefined function media_entity_copy_icons() in media_entity_image/media_entity_image.install": "https://www.drupal.org/files/issues/2936985-2.patch"
             },
-            "drupal/menu_admin_per_menu": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-04-24/drupal_9_deprecated_code-3042751-2.patch"
-            },
             "drupal/module_missing_message_fixer": {
                 "Remove Drush 8 Support": "https://www.drupal.org/files/issues/2019-06-27/3064592-3-remove-drush-8-support.patch"
             },
             "drupal/plupload": {
                 "Deprecated Code (D9) Report":"https://www.drupal.org/files/issues/2020-04-02/3093844-3.patch"
             },
-            "drupal/purge": {
-                "Replace deprecated function drupal_set_message(). (D9)": "https://www.drupal.org/files/issues/2019-10-11/1-purge-drupal9-replace-drupalsetmessage.patch",
-                "Replace deprecated method aliasManager() of class Drush\\Drush. (D9)": "https://www.drupal.org/files/issues/2019-10-12/1-purge-drupal9-replace-aliasmanager.patch"
-            },
-            "drupal/purge_queuer_url": {
+             "drupal/purge_queuer_url": {
                 "Logged-in requests remove items from traffic registry":"https://www.drupal.org/files/issues/2018-05-29/purge_queuer_url-2912139-7-skip-logged-in.patch"
             },  
             "drupal/queue_ui": {
@@ -460,9 +441,6 @@
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
             },
-            "drupal/share_everywhere": {
-                "Drupal 9 Deprecated Status": "https://www.drupal.org/files/issues/2020-01-25/3108784-path-manager.patch"
-            },
             "drupal/sharethis": {
                 "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
             },
@@ -471,12 +449,6 @@
             },
             "drupal/structure_sync": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-08-12/ss-3074382-1.patch"
-            }, 
-            "drupal/seckit": {
-                "Drupal 9 compatibility related issues for Security Kit module": "https://www.drupal.org/files/issues/2020-02-12/3074080-23.patch"
-            },
-            "drupal/svg_image": {
-                "Replace drupal_set_message() with messenger Service":"https://www.drupal.org/files/issues/2020-04-02/3122816-3.patch"
             },
             "drupal/tac_lite": {
                 "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-04/deprecated-3092130-2.patch"
