@@ -2,7 +2,7 @@
 
 # Turn on crude error handling
 set -e -o pipefail
- 
+
 # Executes the test scans and other tests
 
 # Scheduler
@@ -52,6 +52,13 @@ set +e
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en select2 -y"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/select2"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall select2 -y"
+set -e -o pipefail
+
+# Share Everywhere
+set +e
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en share_everywhere -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/share_everywhere"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall share_everywhere -y"
 set -e -o pipefail
 
 # ShareThis - Drupal Check errors out
