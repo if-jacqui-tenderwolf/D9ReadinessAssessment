@@ -61,6 +61,13 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall sharethis -y"
 set -e -o pipefail
 
+# Share Everywhere
+set +e
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en share_everywhere -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/share_everywhere"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall share_everywhere -y"
+set -e -o pipefail
+
 # Single DateTime
 set +e
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en single_datetime -y" && \
