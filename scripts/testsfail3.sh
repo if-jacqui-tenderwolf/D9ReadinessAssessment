@@ -2,7 +2,7 @@
 
 # Turn on crude error handling
 set -e -o pipefail
- 
+
 # Executes the test scans and other tests
 
 # File Entity -- currently failing scan, a few lingering issues persist
@@ -52,25 +52,11 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall geolocation feeds -y"
 set -e -o pipefail
 
-# Google Analytics
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en google_analytics -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/google_analytics" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall google_analytics -y"
-set -e -o pipefail
-
 set +e
 # Group
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en group -y"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/group"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall group -y"
-set -e -o pipefail
-
-# Insert
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en insert -y"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/insert"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall insert -y"
 set -e -o pipefail
 
 # JuiceBox

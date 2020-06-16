@@ -2,15 +2,8 @@
 
 # Turn on crude error handling
 set -e -o pipefail
- 
-# Executes the test scans and other tests
 
-# Advanced CSS/JS Aggregation -- currently failing scan, skipping error checking
-set +e
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en advagg advagg_bundler advagg_cdn advagg_css_minify advagg_js_minify advagg_mod advagg_old_ie_compatibility advagg_validator -y" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/advagg" && \
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall advagg advagg_bundler advagg_cdn advagg_css_minify advagg_js_minify advagg_mod advagg_old_ie_compatibility advagg_validator -y"
-set -e -o pipefail
+# Executes the test scans and other tests
 
 # Comment Notify
 set +e
@@ -103,7 +96,7 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall entity_reference_revisions -y"
 set -e -o pipefail
 
-# Entity Update - this module needs attention. It installed itself in the wrong place and then created problems. The patch doesn't work. 
+# Entity Update - this module needs attention. It installed itself in the wrong place and then created problems. The patch doesn't work.
 #set +e
 #docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en entity_update entity_update_tests -y" && \
 #docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/entity_update" && \

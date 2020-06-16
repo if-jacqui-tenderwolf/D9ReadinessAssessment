@@ -382,9 +382,6 @@
             "drupal/environment_indicator": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-28/3042790-14_0.patch"
             },
-            "drupal/flag": {
-                "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-12/3042758-26.patch"
-            },
             "drupal/fieldblock": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-10-12/fieldblock-deprecated_code-3087563-2-8x_2x_dev.patch"
             },
@@ -431,7 +428,7 @@
             },
              "drupal/purge_queuer_url": {
                 "Logged-in requests remove items from traffic registry":"https://www.drupal.org/files/issues/2018-05-29/purge_queuer_url-2912139-7-skip-logged-in.patch"
-            },  
+            },
             "drupal/queue_ui": {
                 "Drupal 9 Compatibility": "https://www.drupal.org/files/issues/2020-02-04/3097065-11-drupal-9-compatibility.patch"
             },
@@ -440,9 +437,6 @@
             },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
-            },
-            "drupal/sharethis": {
-                "Compatibility with Drupal 9": "https://www.drupal.org/files/issues/2020-03-27/3122880-2.patch"
             },
             "drupal/social_media_links": {
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2019-05-22/social-media-links-3042710-2.patch"
@@ -460,7 +454,8 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-11/3042776-8.patch"
             },
             "drupal/ultimate_cron": {
-                "port drush commands to drush 9.x":"https://www.drupal.org/files/issues/2020-03-21/2912724-21.patch"
+                "port drush commands to drush 9.x":"https://www.drupal.org/files/issues/2020-03-21/2912724-21.patch",
+                "Automated Drupal Rector fixes": "https://www.drupal.org/files/issues/2020-05-23/ultimate_cron.2.x-dev.rector.patch"
             },
             "drupal/user_default_page": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-01-25/3108864-2_0.patch"
