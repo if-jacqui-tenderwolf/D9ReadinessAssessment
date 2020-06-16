@@ -2,7 +2,7 @@
 
 # Turn on crude error handling
 set -e -o pipefail
- 
+
 # Executes the test scans and other tests
 
 # Webform -- skipping scan due to :https://www.jrockowitz.com/blog/webform-road-to-drupal-9
