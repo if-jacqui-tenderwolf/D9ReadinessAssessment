@@ -414,9 +414,6 @@
             "drupal/masquerade": {
                 "Provide a foolproof way to unmasquerade": "https://www.drupal.org/files/issues/2019-12-13/temporary%20unmask%20workaround-2962970-8.patch"
             },
-            "drupal/media_bulk_upload": {
-                "Drupal 9 compatibility": "https://www.drupal.org/files/issues/2019-10-31/drupal-9-compatibility-3091351-2.patch"
-            },
             "drupal/media_entity_image": {
                 "Call to undefined function media_entity_copy_icons() in media_entity_image/media_entity_image.install": "https://www.drupal.org/files/issues/2936985-2.patch"
             },
@@ -454,8 +451,7 @@
                 "Drupal 9 Deprecated Code Report": "https://www.drupal.org/files/issues/2020-02-11/3042776-8.patch"
             },
             "drupal/ultimate_cron": {
-                "port drush commands to drush 9.x":"https://www.drupal.org/files/issues/2020-03-21/2912724-21.patch",
-                "Automated Drupal Rector fixes": "https://www.drupal.org/files/issues/2020-05-23/ultimate_cron.2.x-dev.rector.patch"
+               "Automated Drupal Rector fixes": "https://www.drupal.org/files/issues/2020-05-23/ultimate_cron.2.x-dev.rector.patch"
             },
             "drupal/user_default_page": {
                 "Drupal 9 Deprecated Code Report":"https://www.drupal.org/files/issues/2020-01-25/3108864-2_0.patch"
