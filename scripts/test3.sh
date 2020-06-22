@@ -65,11 +65,11 @@ echo "gtranslate"
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/gtranslate"
 # docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall gtranslate -y"
 
-# HTI
-echo "hierarchical_taxonomy_importer"
-# docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en hierarchical_taxonomy_importer -y"
-docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/hierarchical_taxonomy_importer"
-# docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall hierarchical_taxonomy_importer -y"
+# HTI - Hierarchical Taxonomy Importer
+echo "hti"
+# docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en hti -y"
+docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/hti"
+# docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall hti -y"
 
 # Honeypot
 echo "honeypot"
