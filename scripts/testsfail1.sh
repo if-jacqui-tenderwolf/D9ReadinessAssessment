@@ -118,7 +118,7 @@ docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-c
 # set -e -o pipefail
 
 # Entity Update - this module needs attention. It installed itself in the wrong place and then created problems. The patch doesn't work.
-echo "entity_update"
+# echo "entity_update"
 ## set +e
 ## docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en entity_update entity_update_tests -y" && \
 #docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/entity_update" && \
