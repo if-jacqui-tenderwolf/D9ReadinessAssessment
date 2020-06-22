@@ -366,7 +366,7 @@
                 "Cloudflarepurge: Allow for altering targets before purging": "https://www.drupal.org/files/issues/2019-04-01/3044887-n2.patch"
             },
             "drupal/config_devel": {
-                "Deprecated Code Report": "https://www.drupal.org/files/issues/2019-11-14/deprecated-3094340-2.patch"
+                "Deprecated Code Report": "https://www.drupal.org/files/issues/2020-06-13/deprecated-3094340-13.patch"
             },
             "drupal/config_filter": {
                 "Fix test issues for 2.x version of module":"https://www.drupal.org/files/issues/2020-04-03/3124767-2.patch"
