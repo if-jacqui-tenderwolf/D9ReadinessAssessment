@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Turn on crude error handling
-## set -e -o pipefail
+set -e -o pipefail
 
 # Executes the test scans and other tests
 
@@ -131,4 +131,4 @@ echo "facets"
 # docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush en facets -y" && \
 docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drupal-check modules/contrib/facets"
 # docker-compose exec php7.3 /bin/sh -c "cd /var/www/html/docroot; ../bin/drush pm-uninstall facets -y"
-# set -e -o pipefail
+set -e -o pipefail
