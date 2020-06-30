@@ -432,6 +432,9 @@
             "drupal/quick_node_clone": {
                 "Deprecated Code Report": "https://www.drupal.org/files/issues/2020-03-20/3076998-20.patch"
             },
+            "drupal/scheduler": {
+                "Drupal 9 Deprecated Code Report for Scheduler": "https://www.drupal.org/files/issues/2020-03-31/3042677-34.remove-phpstan-progress.patch"
+            },
             "drupal/search_exclude": {
                 "Drupal 9 Deprecated Method used": "https://www.drupal.org/files/issues/2019-08-20/se-3073740-6.patch"
             },
