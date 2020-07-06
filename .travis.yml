@@ -69,7 +69,6 @@ git:
 
 notifications:
   email:
-    - lisa@ifsight.com
     - jacqui@ifsight.com
   on_success: change
   on_failure: always
